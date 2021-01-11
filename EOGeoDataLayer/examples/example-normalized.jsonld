@@ -1,0 +1,58 @@
+{
+  "id": "urn:ngsi-ld:urn:ngsi-ld:EOGeoDataLayer:1",
+  "type": "EOGeoDataLayer",
+  "createdAt": "2020-03-13T15:42:00Z",
+  "modifiedAt": "2020-03-13T15:45:00Z",
+  "isOutputOf": {
+	"type": "Relationship",
+	"object": "urn:ngsi-ld:EOAnalysis:02"
+	},
+  "localServerPath": {
+    "type": "Property",
+    "value": "/data/www/water_mask.tif"
+  },
+  "storageFormat": {
+    "type": "Property",
+    "value": [ "GeoTIFF", "ESRI Shapefile" ]
+  },
+  "areaLocation": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          -67.137,
+          45.13
+        ],
+        [
+          -66.964,
+          44.8097
+        ],
+        [
+          -68.052,
+          44.3252
+        ],
+        [
+          -70.75,
+          43.08
+        ],
+        [
+          -67.137,
+          45.13
+        ]
+      ]
+
+    }
+  },
+  "metadata": {
+    "type": "Property",
+    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am"],
+    "crs": {
+      "type": "Property",
+      "value": "EPSG:4326"
+    }
+  },
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context"
+  ]
+}

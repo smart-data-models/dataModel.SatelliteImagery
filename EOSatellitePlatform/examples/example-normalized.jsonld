@@ -1,0 +1,25 @@
+{
+  "id": "urn:ngsi-ld:EOSatellitePlatform:154",
+  "type": "EOSatellitePlatform",
+  "createdAt": "2020-03-13T15:42:00Z",
+  "modifiedAt": "2020-03-13T15:45:00Z",
+  "operator": {
+    "type": "Property",
+    "value": "European Space Agency"
+  },
+  "platformID": {
+    "type": "Property",
+    "value": "A"
+  },
+  "platformName": {
+    "type": "Property",
+    "value": "Sentinel-1"
+  },
+  "platformNSSDC": {
+    "type": "Property",
+    "value": "2018-039A"
+  },
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context"
+  ]
+}
