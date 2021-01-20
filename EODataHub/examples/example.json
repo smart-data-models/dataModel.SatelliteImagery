@@ -1,0 +1,15 @@
+{
+    "id": "urn:ngsi-ld:EODataHub:123",
+    "type": "EODataHub",
+    "name": {
+        "type": "Property",
+        "value": "ESA Copernicus Open Access Hub"
+    },
+    "dataHubURL": {
+        "type": "url",
+        "value": "http://scihub.copernicus.eu"
+    },
+    "@context": [
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}
