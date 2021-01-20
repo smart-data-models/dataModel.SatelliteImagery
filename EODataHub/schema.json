@@ -15,7 +15,7 @@
             "EODataHub"
           ]
         },
-        "name": {
+        "dataHubName": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. An mandatory text string used to declare the name of the used data hub"
         },
@@ -29,7 +29,7 @@
   "required": [
     "id",
     "type",
-    "name",
+    "dataHubName",
     "dataHubURL"
   ]
 }
