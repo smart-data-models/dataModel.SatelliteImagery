@@ -1,7 +1,7 @@
 {
     "id": "urn:ngsi-ld:EODataHub:123",
     "type": "EODataHub",
-    "name": {
+    "dataHubName": {
         "type": "Property",
         "value": "ESA Copernicus Open Access Hub"
     },
