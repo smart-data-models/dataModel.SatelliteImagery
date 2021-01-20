@@ -60,7 +60,7 @@
   },
   "timeliness": {
     "type": "Property",
-    "value": " Non Time Critical"
+    "value": "Non Time Critical"
   },
   "orbitDirection": {
     "type": "Property",
