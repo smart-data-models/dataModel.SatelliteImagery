@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$id": "https://smart-data-models.github.io/dataModel.SatelliteImagery/SatelliteImagery-schema.json",
+    "$id": "https://raw.githubusercontent.com/mbakratsas/dataModel.SatelliteImagery/master/SatelliteImagery-schema.json",
     "title": "FIWARE - Satellite Imagery base schema",
     "description": "Common NGSI-LD definitions for Satellite Imagery data models",
     "type": "object",
