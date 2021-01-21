@@ -10,6 +10,9 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -29,9 +32,6 @@
             "Shapefile"
           ],
           "description": "Property. Entity's satorage format."
-        },
-        "areaLocation": {
-          "$ref": "http://geojson.org/schema/Polygon.json"
         },
         "metadata": {
           "description": "Metadata. Contains core metadata of the produces data layer",
@@ -64,7 +64,7 @@
     "type",
     "localServerPath",
     "storageFormat",
-    "areaLocation",
+    "location",
     "metadata"
   ]
 }

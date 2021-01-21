@@ -10,6 +10,9 @@
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -43,9 +46,6 @@
           ],
           "description": "Property. Entity's type of analysis applied."
         },
-        "areaLocation": {
-          "$ref": "http://geojson.org/schema/Polygon.json"
-        },
         "isAnalysisOf": {
           "type": "string",
           "format": "uri",
@@ -61,6 +61,6 @@
     "provider",
     "resultValues",
     "analysisType",
-    "areaLocation"
+    "location"
   ]
 }
