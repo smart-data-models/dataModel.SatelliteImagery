@@ -3,7 +3,7 @@
   "type": "EOGeoDataLayer",
   "localServerPath": "/data/www/water_mask.tif",
   "storageFormat": "GeoTIFF",
-  "areaLocation": {
+  "location": {
     "type": "Polygon",
     "coordinates": [
       [

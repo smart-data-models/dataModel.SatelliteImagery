@@ -8,7 +8,7 @@
     "1:not flooded"
   ],
   "analysisType": "Flood detection",
-  "areaLocation": {
+  "location": {
     "type": "Polygon",
     "coordinates": [
       [
