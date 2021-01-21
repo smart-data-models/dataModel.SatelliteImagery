@@ -1,0 +1,39 @@
+{
+  "id": "urn:ngsi-ld:EOGeoDataLayer:1",
+  "type": "EOGeoDataLayer",
+  "localServerPath": "/data/www/water_mask.tif",
+  "storageFormat": "GeoTIFF",
+  "areaLocation": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        -67.137,
+        45.13
+      ],
+      [
+        -66.964,
+        44.8097
+      ],
+      [
+        -68.052,
+        44.3252
+      ],
+      [
+        -70.75,
+        43.08
+      ],
+      [
+        -67.137,
+        45.13
+      ]
+    ]
+  },
+  "metadata": {
+    "type": "Property",
+    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],
+    "crs": {
+      "type": "Property",
+      "value": "EPSG:4326"
+    }
+  }
+}

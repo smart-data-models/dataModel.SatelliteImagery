@@ -1,0 +1,33 @@
+{
+  "id": "urn:ngsi-ld:EOInstrument:154",
+  "type": "EOInstrument",
+  "createdAt": "2020-03-13T15:42:00Z",
+  "modifiedAt": "2020-03-13T15:45:00Z",
+  "carriedOn": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:EOSatellitePlatform:154"
+  },
+  "instrumentID": {
+    "type": "Property",
+    "value": "OLCI"
+  },
+  "instrumentName": {
+    "type": "Property",
+    "value": "Ocean Land Colour Instrument"
+  },
+  "operationalMode": {
+    "type": "Property",
+    "value": "INS-NOBS"
+  },
+  "polarizaionMode": {
+    "type": "Property",
+    "value": "HH+HV"
+  },
+  "swathID": {
+    "type": "Property",
+    "value": "S1"
+  },
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context"
+  ]
+}

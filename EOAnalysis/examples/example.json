@@ -1,0 +1,38 @@
+{
+  "id": "EOAnalysis:03",
+  "type": "EOAnalysis",
+  "analysedAt": "2020-12-24T12:00:00Z",
+  "provider": "AQUA3s/CERTH",
+  "resultValues": [
+    "0:flooded",
+    "1:not flooded"
+  ],
+  "analysisType": "Flood detection",
+  "areaLocation": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -67.137,
+          45.13
+        ],
+        [
+          -66.964,
+          44.8097
+        ],
+        [
+          -68.052,
+          44.3252
+        ],
+        [
+          -70.75,
+          43.08
+        ],
+        [
+          -67.137,
+          45.13
+        ]
+      ]
+    ]
+  }
+}

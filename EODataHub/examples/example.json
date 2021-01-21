@@ -1,0 +1,6 @@
+{
+  "id": "EODataHub:123",
+  "type": "EODataHub",
+  "dataHubName": "ESA Copernicus Open Access Hub",
+  "dataHubURL": "http://scihub.copernicus.eu"
+}
