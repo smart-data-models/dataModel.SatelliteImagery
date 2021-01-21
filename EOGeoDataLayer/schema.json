@@ -35,6 +35,7 @@
         },
         "metadata": {
           "description": "Metadata. Contains core metadata of the produces data layer",
+          "type": "string",
           "enum": [
             "https://inspire.ec.europa.eu/id/document/tg/ef",
             "https://inspire.ec.europa.eu/id/document/tg/am"
