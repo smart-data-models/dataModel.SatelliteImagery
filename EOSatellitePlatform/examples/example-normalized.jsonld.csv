@@ -1,2 +1,0 @@
-id_,type_,createdAt_,modifiedAt_,operator__type_,operator__value_,platformID__type_,platformID__value_,platformName__type,platformName__value_,platformNSSDCA__type_,platformNSSDCA__value_,@context__0_
-urn:ngsi-ld:EOSatellitePlatform:154,EOSatellitePlatform,2020-03-13T15:42:00Z,2020-03-13T15:45:00Z,Property,European Space Agency,Property,A,Property,Sentinel-1,Property,2018-039A,https://schema.lab.fiware.org/ld/context
