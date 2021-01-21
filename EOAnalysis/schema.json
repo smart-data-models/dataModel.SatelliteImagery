@@ -39,11 +39,6 @@
         },
         "analysisType": {
           "type": "string",
-          "enum": [
-            "Oil spill detection",
-            "Flood detection",
-            "Alge bloom detection"
-          ],
           "description": "Property. Entity's type of analysis applied."
         },
         "isAnalysisOf": {
