@@ -30,10 +30,11 @@
   },
   "metadata": {
     "type": "Property",
-    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],
+    "value": "https://inspire.ec.europa.eu/id/document/tg/ef",
     "crs": {
       "type": "Property",
       "value": "EPSG:4326"
     }
-  }
+  },
+  "isOutputOf": "EOAnalysis:02"
 }

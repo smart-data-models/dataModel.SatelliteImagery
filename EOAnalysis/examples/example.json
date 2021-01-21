@@ -1,5 +1,5 @@
 {
-  "id": "EOAnalysis:03",
+  "id": "EOAnalysis:02",
   "type": "EOAnalysis",
   "analysedAt": "2020-12-24T12:00:00Z",
   "provider": "AQUA3s/CERTH",
@@ -34,5 +34,6 @@
         ]
       ]
     ]
-  }
+  },
+  "isAnalysisOf": "urn:ngsi-ld:EOProduct:123"
 }
