@@ -1,0 +1,8 @@
+{
+  "id": "urn:ngsi-ld:EOSatellitePlatform:154",
+  "type": "EOSatellitePlatform",
+  "operator": "European Space Agency",
+  "platformID": "A",
+  "platformName": "Sentinel-1",
+  "platformNSSDCA": "2018-039A"
+}
