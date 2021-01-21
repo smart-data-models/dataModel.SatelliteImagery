@@ -6,7 +6,10 @@
   "description": "This entity contains a harmonised description of a generic EOSatellitePlatform made for the Satellite Imagerry domain. This entity is primarily associated with the Satellite platforms related to Earth Observation Analysis applications.",
   "type": "object",
   "allOf": [
-     {
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
