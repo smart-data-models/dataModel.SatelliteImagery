@@ -1,0 +1,111 @@
+EOProduct:
+  description: 'This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.'
+  properties:
+    areaLocation:
+      $id: https://geojson.org/schema/Polygon.json
+      $schema: "http://json-schema.org/draft-07/schema#"
+      properties:
+        bbox:
+          items:
+            type: number
+          minItems: 4
+          type: array
+        coordinates:
+          items:
+            items:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            minItems: 4
+            type: array
+          type: array
+        type:
+          enum:
+            - Polygon
+          type: string
+      required:
+        - type
+        - coordinates
+      title: 'GeoJSON Polygon'
+      type: object
+    cloudCoverage:
+      description: 'The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'
+      type: Property
+      x-ngsi:
+        model: ' https://schema.org/Number'
+        units: percent
+    ingestionDate:
+      format: date-time
+      type: string
+    orbitDirection:
+      description: 'The orbit pass orientation'
+      enum:
+        - Ascending
+        - Descending
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    orbitNumber:
+      description: 'The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'
+      type: Property
+      x-ngsi:
+        model: ' https://schema.org/Number'
+        units: 'No unit'
+    processingLevel:
+      description: 'A mandatory text string used to declare the processing level of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    productFormat:
+      description: 'A mandatory text string used to declare the format of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    productID:
+      description: 'A mandatory text string used to declare the unique ID of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    productType:
+      description: 'A mandatory text string used to declare the type of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    productURL:
+      description: 'A mandatory url used to declare the downlaod link of the product'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/url
+    sensingDate:
+      format: date-time
+      type: string
+    sensingStartedAt:
+      format: date-time
+      type: string
+    sensingStoppedAt:
+      format: date-time
+      type: string
+    timeliness:
+      description: 'The timeliness of the product'
+      enum:
+        - 'Time critical'
+        - 'Not time critical'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    type:
+      description: 'NGSI-LD Entity Type. It must be equal to EOProduct.'
+      enum:
+        - EOProduct
+      type: Property
+  required:
+    - id
+    - type
+    - productType
+    - productID
+    - productURL
+    - processingLevel
+    - productFormat
+    - areaLocation
+  type: object
