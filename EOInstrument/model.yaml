@@ -1,0 +1,44 @@
+EOInstrument:
+  description: 'This entity contains a harmonised description of a generic EOInstrument made for the Satellite Imagerry domain. This entity is primarily associated with the satellite instruments related to Earth Observation Analysis applications.'
+  properties:
+    carriedOn:
+      description: 'The ID of the satellite platform that the instrument is carried on'
+      format: uri
+      type: Relationship
+    instrumentID:
+      description: 'A mandatory text string used to declare the ID of the instrument payload'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    instrumentName:
+      description: 'A mandatory text string used to declare the name of the instrument payload'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    operationalMode:
+      description: 'A text string used to declare the supported sensor modes if available'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    polarizationMode:
+      description: 'A text string used to declare the polarization modes if available'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    swathID:
+      description: 'A text string used to declare the swath ID if available'
+      type: Property
+      x-ngsi:
+        model: https://schema.org/Text
+    type:
+      description: 'NGSI-LD Entity Type. It must be equal to EOInstrument.'
+      enum:
+        - EOInstrument
+      type: Property
+  required:
+    - id
+    - type
+    - instrumentID
+    - instrumentName
+    - operationalMode
+  type: object
