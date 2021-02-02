@@ -7,6 +7,9 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -19,7 +22,7 @@
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the ID of the instrument payload"
         },
-         "instrumentName": {
+        "instrumentName": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the name of the instrument payload"
         },

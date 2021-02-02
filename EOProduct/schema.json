@@ -7,6 +7,12 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -30,9 +36,6 @@
         "processingLevel": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the processing level of the product"
-        },
-        "areaLocation": {
-          "$ref": "http://geojson.org/schema/Polygon.json"
         },
         "productFormat": {
           "type": "string",
@@ -89,6 +92,6 @@
     "productURL",
     "processingLevel",
     "productFormat",
-    "areaLocation"
+    "location"
   ]
 }

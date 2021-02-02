@@ -5,7 +5,7 @@
   "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('af2b183a-e0d5-422d-be8a-eafee42ba5b1')/$value",
   "productType": "OL_1_ERR___",
   "processingLevel": "L1",
-  "areaLocation": {
+  "location": {
     "type": "Polygon",
     "coordinates": [
       [

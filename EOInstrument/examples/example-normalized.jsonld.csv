@@ -1,2 +1,0 @@
-id_,type_,createdAt_,modifiedAt_, carriedOn__type_, carriedOn__object_,instrumentID__type_,instrumentID__value_,instrumentName__type_,instrumentName__value_,operationMode__type_,operationMode__value_,polarizationMode__type_,polarizationMode__value_,swathID__type_,swathID__value_,@context__0_
-urn:ngsi-ld:EOInstrument:154,EOInstrument,2020-03-13T15:42:00Z,2020-03-13T15:45:00Z, Relationship,urn:ngsi-ld:EOSatellitePlatform:154,Property,OLCI,Property,Ocean Land Colour Instrument,Property,INS-NOBS,Property,HH+HV,Property,S1,https://schema.lab.fiware.org/ld/context

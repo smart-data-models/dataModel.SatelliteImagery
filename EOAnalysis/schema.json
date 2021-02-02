@@ -7,6 +7,12 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -33,15 +39,7 @@
         },
         "analysisType": {
           "type": "string",
-          "enum": [
-            "Oil spill detection",
-            "Flood detection",
-            "Alge bloom detection"
-          ],
           "description": "Property. Entity's type of analysis applied."
-        },
-        "areaLocation": {
-          "$ref": "http://geojson.org/schema/Polygon.json"
         },
         "isAnalysisOf": {
           "type": "string",
@@ -58,6 +56,6 @@
     "provider",
     "resultValues",
     "analysisType",
-    "areaLocation"
+    "location"
   ]
 }

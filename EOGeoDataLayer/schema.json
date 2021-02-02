@@ -7,6 +7,12 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
       "properties": {
         "type": {
           "type": "string",
@@ -27,11 +33,9 @@
           ],
           "description": "Property. Entity's satorage format."
         },
-        "areaLocation": {
-          "$ref": "http://geojson.org/schema/Polygon.json"
-        },
         "metadata": {
           "description": "Metadata. Contains core metadata of the produces data layer",
+          "type": "string",
           "enum": [
             "https://inspire.ec.europa.eu/id/document/tg/ef",
             "https://inspire.ec.europa.eu/id/document/tg/am"
@@ -61,7 +65,7 @@
     "type",
     "localServerPath",
     "storageFormat",
-    "areaLocation",
+    "location",
     "metadata"
   ]
 }
