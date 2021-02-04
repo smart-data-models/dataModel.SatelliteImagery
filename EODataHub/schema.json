@@ -31,8 +31,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "dataHubName",
-    "dataHubURL"
+    "type"
   ]
 }

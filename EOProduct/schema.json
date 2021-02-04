@@ -87,11 +87,7 @@
   "required": [
     "id",
     "type",
-    "productType",
     "productID",
-    "productURL",
-    "processingLevel",
-    "productFormat",
-    "location"
+    "productURL"
   ]
 }

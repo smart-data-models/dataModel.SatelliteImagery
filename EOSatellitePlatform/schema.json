@@ -39,9 +39,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "platformID",
-    "platformName",
-    "platformNSSDCA"
+    "type"
   ]
 }
