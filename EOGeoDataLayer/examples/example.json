@@ -3,7 +3,7 @@
   "type": "EOGeoDataLayer",
   "localServerPath": "/data/www/water_mask.tif",
   "storageFormat": "GeoTIFF",
-  "metadata": {
+  "data_layer_metadata": {
     "type": "Property",
     "value": "https://inspire.ec.europa.eu/id/document/tg/ef",
     "crs": {

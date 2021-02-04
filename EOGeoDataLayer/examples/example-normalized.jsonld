@@ -16,7 +16,7 @@
     "value": [ "GeoTIFF", "ESRI Shapefile"],
     "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
   },
-  "metadata": {
+  "data_layer_metadata": {
     "type": "Property",
     "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],
     "crs": {

@@ -33,7 +33,7 @@
           ],
           "description": "Property. Entity's satorage format."
         },
-        "metadata": {
+        "data_layer_metadata": {
           "description": "Metadata. Contains core metadata of the produces data layer",
           "type": "string",
           "enum": [
