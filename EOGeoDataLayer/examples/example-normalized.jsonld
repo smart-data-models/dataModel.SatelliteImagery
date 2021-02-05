@@ -13,7 +13,7 @@
   },
   "storageFormat": {
     "type": "string",
-    "value": [ "GeoTIFF", "ESRI Shapefile"],
+    "value": [ "GeoTIFF", "ESRI Shapefile" ],
     "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
   },
   "data_layer_metadata": {
@@ -22,6 +22,35 @@
     "crs": {
       "type": "Property",
       "value": "EPSG:4326"
+    }
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          -67.137,
+          45.13
+        ],
+        [
+          -66.964,
+          44.8097
+        ],
+        [
+          -68.052,
+          44.3252
+        ],
+        [
+          -70.75,
+          43.08
+        ],
+        [
+          -67.137,
+          45.13
+        ]
+      ]
+
     }
   },
   "@context": [

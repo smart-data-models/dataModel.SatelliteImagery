@@ -26,7 +26,7 @@
     "type": "Property",
     "value": [ "Oil spill detection", "Flood detection", "Alge bloom detection" ]
   },
-  "areaLocation": {
+  "location": {
     "type": "GeoProperty",
     "value": {
       "type": "Polygon",
@@ -43,10 +43,12 @@
           -68.052,
           44.3252
         ],
-        [ -70.75,
-          43.08 
+        [
+          -70.75,
+          43.08
         ],
-        [ -67.137,
+        [
+          -67.137,
           45.13
         ]
       ]
