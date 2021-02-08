@@ -16,7 +16,7 @@
     "value": [ "GeoTIFF", "ESRI Shapefile"],
     "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
   },
-  "areaLocation": {
+  "location": {
     "type": "GeoProperty",
     "value": {
       "type": "Polygon",
