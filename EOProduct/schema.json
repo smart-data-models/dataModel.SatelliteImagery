@@ -67,19 +67,23 @@
         },
         "ingestionDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time at which the data was made available in the online archive"
         },
         "sensingDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
         },
         "sensingStartedAt": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time of the satellite on-board acquisition of the first line of the image in the product"
         },
         "sensingStoppedAt": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time of the satellite on-board acquisition of the last line of the image in the product"
         }
       }
     }
