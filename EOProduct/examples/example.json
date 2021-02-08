@@ -40,5 +40,7 @@
   "ingestionDate": "2020-12-24T12:00:00Z",
   "sensingDate": "2020-12-24T12:00:00Z",
   "sensingStartedAt": "2020-12-24T12:00:00Z",
-  "sensingStoppedAt": "2020-12-24T12:00:00Z"
+  "sensingStoppedAt": "2020-12-24T12:00:00Z",
+  "hostedOn":"urn:ngsi-ld:EODataHub:123",
+  "observedBy":"urn:ngsi-ld:EOInstrument:154"
 }
