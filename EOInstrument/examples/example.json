@@ -4,7 +4,7 @@
   "instrumentID": "OLCI",
   "instrumentName": "Ocean Land Colour Instrument",
   "operationalMode": "INS-NOBS",
-  "polarizaionMode": "HH+HV",
+  "polarizationMode": "HH+HV",
   "swathID": "S1",
   "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"
 }
