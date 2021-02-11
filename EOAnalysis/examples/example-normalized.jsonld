@@ -3,7 +3,7 @@
   "type": "EOAnalysis",
   "createdAt": "2020-03-13T15:42:00Z",
   "modifiedAt": "2020-03-13T15:45:00Z",
-  "analysedAt": {
+  "analyzedAt": {
     "type": "Property",
     "value": {
       "@type": "DateTime",

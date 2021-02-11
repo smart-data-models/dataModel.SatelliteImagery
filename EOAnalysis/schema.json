@@ -21,7 +21,7 @@
             "EOAnalysis"
           ]
         },
-        "analysedAt": {
+        "analyzedAt": {
           "type": "string",
           "format": "date-time",
           "description": "Property. Model:'https://schema.org/Time'. The time at which the analysis finished"
