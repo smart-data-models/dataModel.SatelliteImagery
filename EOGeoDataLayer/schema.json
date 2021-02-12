@@ -27,10 +27,6 @@
         },
         "storageFormat": {
           "type": "string",
-          "enum": [
-            "GeoTIFF",
-            "Shapefile"
-          ],
           "description": "Property. Entity's satorage format."
         },
         "data_layer_metadata": {
