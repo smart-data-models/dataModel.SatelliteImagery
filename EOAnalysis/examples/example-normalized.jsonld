@@ -18,9 +18,9 @@
     "type": "Property",
     "value": "AQUA3s/CERTH"
   },
-  "resultValues": {
+  "resultDescription": {
     "type": "Property",
-    "value": [ "0:flooded", "1:not flooded" ]
+    "value": "The detected oil spill covers 1000 square miles"
   },
   "analysisType": {
     "type": "Property",
