@@ -29,24 +29,9 @@
           "type": "string",
           "description": "Property. Entity's satorage format."
         },
-        "data_layer_metadata": {
-          "description": "Metadata. Contains core metadata of the produces data layer",
+        "geoMetadata": {
           "type": "string",
-          "enum": [
-            "https://inspire.ec.europa.eu/id/document/tg/ef",
-            "https://inspire.ec.europa.eu/id/document/tg/am"
-          ],
-          "allOf": [
-            {
-              "crs": {
-                "type": "string",
-                "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the crs of the output data layer"
-              },
-              "required": [
-                "crs"
-              ]
-            }
-          ]
+          "description": "Property. Model:'https://schema.org/Text'. A text string used to declare the metadata file if available"
         },
         "isOutputOf": {
           "type": "string",

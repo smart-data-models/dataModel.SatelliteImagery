@@ -16,13 +16,9 @@
     "value": [ "GeoTIFF", "ESRI Shapefile" ],
     "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
   },
-  "data_layer_metadata": {
+  "geoMetadata": {
     "type": "Property",
-    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],
-    "crs": {
-      "type": "Property",
-      "value": "EPSG:4326"
-    }
+    "value": "/data/www/metadata.xml"
   },
   "location": {
     "type": "GeoProperty",

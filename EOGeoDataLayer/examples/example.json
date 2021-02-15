@@ -3,13 +3,9 @@
   "type": "EOGeoDataLayer",
   "localServerPath": "/data/www/water_mask.tif",
   "storageFormat": "GeoTIFF",
-  "data_layer_metadata": {
+  "geoMetadata": {
     "type": "Property",
-    "value": "https://inspire.ec.europa.eu/id/document/tg/ef",
-    "crs": {
-      "type": "Property",
-      "value": "EPSG:4326"
-    }
+    "value": "/data/www/metadata.xml"
   },
   "location": {
     "type": "Polygon",
