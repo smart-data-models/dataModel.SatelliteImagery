@@ -6,11 +6,11 @@ contributors:
   mail: mbakratsas@iti.gr
   organization: CERTH-ITI. https://www.iti.gr/
   project: aqua3S. https://aqua3s.eu/
-  comments: 
+  comments: Participation in the design of the SatelliteImagery data model. Ιmplementation of Schema.json files for all involved entities and the corresponding payload examples.
 - 
-  name: 
-  surname: 
-  mail: 
-  organization: 
-  project: 
-  comments: 
+  name: Konstantinos
+  surname: Naskou
+  mail: konstantinos.naskou@iccs.gr
+  organization: Institute of Communication and Computer Systems (https://i-sense.iccs.gr/)
+  project: aqua3S (https://aqua3s.eu)
+  comments: Initial design of the SatelliteImagery data model and the related entities. Produced the graphml illustration.
