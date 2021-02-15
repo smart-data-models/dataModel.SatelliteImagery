@@ -103,6 +103,9 @@
     "id",
     "type",
     "productID",
-    "productURL"
+    "productURL",
+    "location",
+    "productFormat",
+    "sensingDate"
   ]
 }
