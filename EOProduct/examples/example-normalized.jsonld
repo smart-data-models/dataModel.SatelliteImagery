@@ -19,7 +19,7 @@
     "type": "Property",
     "value": "L1"
   },
-  "areaLocation": {
+  "location": {
     "type": "GeoProperty",
     "value": {
       "type": "Polygon",
