@@ -3,10 +3,14 @@
   "type": "EOGeoDataLayer",
   "localServerPath": "/data/www/water_mask.tif",
   "storageFormat": "GeoTIFF",
-  "geoMetadata": {
-    "type": "Property",
-    "value": "/data/www/metadata.xml"
-  },
+  "geoMetadata": "/data/www/metadata.xml",
+  "contentInformation": [
+    {
+     "layer_name" : "band1",
+     "layer_categorization": "categorical",
+     "values_explanation":  [ "1:oil", "0:no oil" ] 
+    }
+  ],
   "location": {
     "type": "Polygon",
     "coordinates": [
