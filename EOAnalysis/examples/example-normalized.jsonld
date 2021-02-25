@@ -16,15 +16,15 @@
   },
   "provider": {
     "type": "Property",
-    "value": "AQUA3s/CERTH"
+    "value": "aqua3S/CERTH"
   },
   "resultDescription": {
     "type": "Property",
-    "value": "The detected oil spill covers 1000 square miles"
+    "value": "The detected flooded areas cover 1000 square meters"
   },
   "analysisType": {
     "type": "Property",
-    "value": [ "Oil spill detection", "Flood detection", "Alge bloom detection" ]
+    "value": "Flood Detection"
   },
   "location": {
     "type": "GeoProperty",
@@ -32,24 +32,11 @@
       "type": "Polygon",
       "coordinates": [
         [
-          -67.137,
-          45.13
-        ],
-        [
-          -66.964,
-          44.8097
-        ],
-        [
-          -68.052,
-          44.3252
-        ],
-        [
-          -70.75,
-          43.08
-        ],
-        [
-          -67.137,
-          45.13
+          [ 23.6627, 41.88768 ],
+          [ 25.85598, 43.38622 ],
+          [ 23.4899, 43.78691 ],
+          [ 22.35609, 42.28869 ],
+          [ 23.6627, 41.88769 ]
         ]
       ]
 

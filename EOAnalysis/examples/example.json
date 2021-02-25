@@ -3,32 +3,17 @@
   "type": "EOAnalysis",
   "analyzedAt": "2020-12-24T12:00:00Z",
   "provider": "aqua3S/CERTH",
-  "resultDescription": "The detected oil spill covers 1000 square miles",
-  "analysisType": "Oil spill detection",
+  "resultDescription": "The detected flooded areas cover 1000 square meters",
+  "analysisType": "Flood Detection",
   "location": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          -67.137,
-          45.13
-        ],
-        [
-          -66.964,
-          44.8097
-        ],
-        [
-          -68.052,
-          44.3252
-        ],
-        [
-          -70.75,
-          43.08
-        ],
-        [
-          -67.137,
-          45.13
-        ]
+        [ 23.6627, 41.88768 ],
+        [ 25.85598, 43.38622 ],
+        [ 23.4899, 43.78691 ],
+        [ 22.35609, 42.28869 ],
+        [ 23.6627, 41.88769 ]
       ]
     ]
   },

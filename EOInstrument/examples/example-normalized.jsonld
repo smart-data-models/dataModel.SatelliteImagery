@@ -9,19 +9,19 @@
   },
   "instrumentID": {
     "type": "Property",
-    "value": "OLCI"
+    "value": "SAR-C"
   },
   "instrumentName": {
     "type": "Property",
-    "value": "Ocean Land Colour Instrument"
+    "value": "Synthetic Aperture Radar (C-band)"
   },
   "operationalMode": {
     "type": "Property",
-    "value": "INS-NOBS"
+    "value": "IW"
   },
   "polarizaionMode": {
     "type": "Property",
-    "value": "HH+HV"
+    "value": "VV + VH"
   },
   "swathID": {
     "type": "Property",

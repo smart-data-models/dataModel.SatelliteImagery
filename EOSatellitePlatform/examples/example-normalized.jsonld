@@ -5,7 +5,7 @@
   "modifiedAt": "2020-03-13T15:45:00Z",
   "platformID": {
     "type": "Property",
-    "value": "A"
+    "value": "B"
   },
   "platformName": {
     "type": "Property",
@@ -13,7 +13,7 @@
   },
   "platformNSSDCA": {
     "type": "Property",
-    "value": "2018-039A"
+    "value": "2016-025A"
   },
   "@context": [
     "https://schema.lab.fiware.org/ld/context"

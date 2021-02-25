@@ -1,10 +1,10 @@
 {
   "id": "urn:ngsi-ld:EOInstrument:154",
   "type": "EOInstrument",
-  "instrumentID": "OLCI",
-  "instrumentName": "Ocean Land Colour Instrument",
-  "operationalMode": "INS-NOBS",
-  "polarizaionMode": "HH+HV",
+  "instrumentID": "SAR-C",
+  "instrumentName": "Synthetic Aperture Radar (C-band)",
+  "operationalMode": "IW",
+  "polarizaionMode": "VV + VH",
   "swathID": "S1",
   "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"
 }

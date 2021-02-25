@@ -1,7 +1,7 @@
 {
   "id": "urn:ngsi-ld:EOSatellitePlatform:154",
   "type": "EOSatellitePlatform",
-  "platformID": "A",
+  "platformID": "B",
   "platformName": "Sentinel-1",
-  "platformNSSDCA": "2018-039A"
+  "platformNSSDCA": "2016-025A"
 }
