@@ -47,10 +47,6 @@
         },
         "timeliness": {
           "type": "string",
-          "enum": [
-            "Time critical",
-            "Not time critical"
-          ],
           "description": "Property. Model:'https://schema.org/Text'. The timeliness of the product"
         },
         "orbitDirection": {
