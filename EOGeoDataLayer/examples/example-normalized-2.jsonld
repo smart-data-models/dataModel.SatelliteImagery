@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngsi-ld:EOGeoDataLayer:1",
+  "type": "EOGeoDataLayer",
+  "createdAt": "2020-03-13T15:42:00Z",
+  "modifiedAt": "2020-03-13T15:45:00Z",
+  "isOutputOf": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:EOAnalysis:02"
+  },
+  "localServerPath": {
+    "type": "Property",
+    "value": "/data/www/oil_map.tif"
+  },
+  "storageFormat": {
+    "type": "string",
+    "value": "GeoTIFF",
+    "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
+  },
+  "geoMetadata": {
+    "type": "Property",
+    "value": "/data/www/metadata_oil.xml"
+  },
+  "contentInformation": [
+    {
+      "layer_name": "band1",
+      "layer_categorization": "categorical",
+      "values_explanation": [ "1:oil", "0:water" ]
+    }
+  ],
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [ 23.48993, 42.415 ],
+          [ 23.66274, 42.415 ],
+          [ 23.66274, 42.53524 ],
+          [ 23.48993, 42.53524 ],
+          [ 23.48993, 42.415 ]
+        ]
+      ]
+    }
+  },
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context"
+  ]
+}
