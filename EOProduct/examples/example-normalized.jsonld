@@ -39,11 +39,6 @@
     "type": "Property",
     "value": "SAFE"
   },
-  "cloudCoverage": {
-    "type": "Property",
-    "value": 0,
-    "unitCode": "P1"
-  },
   "timeliness": {
     "type": "Property",
     "value": "Fast-24h"
