@@ -20,13 +20,13 @@
     "type": "Property",
     "value": "/data/www/metadata.xml"
   },
-  "contentInformation": [
+  "contentInformation": {[
     {
       "layer_name": "band1",
       "layer_categorization": "categorical",
       "values_explanation": [ "1:inundated", "0:non inundated" ]
     }
-  ],
+  ]},
   "location": {
     "type": "GeoProperty",
     "value": {
