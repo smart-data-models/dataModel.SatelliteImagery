@@ -47,10 +47,6 @@
         },
         "timeliness": {
           "type": "string",
-          "enum": [
-            "Time critical",
-            "Not time critical"
-          ],
           "description": "Property. Model:'https://schema.org/Text'. The timeliness of the product"
         },
         "orbitDirection": {
@@ -67,19 +63,34 @@
         },
         "ingestionDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time at which the data was made available in the online archive"
         },
         "sensingDate": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
         },
         "sensingStartedAt": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time of the satellite on-board acquisition of the first line of the image in the product"
         },
         "sensingStoppedAt": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Time'. The time of the satellite on-board acquisition of the last line of the image in the product"
+        },
+        "hostedOn": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. The ID of the data hub that the product is hosted on"
+        }
+        ,
+        "observedBy": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. The ID of the instrument that the product was observed by"
         }
       }
     }
@@ -87,11 +98,10 @@
   "required": [
     "id",
     "type",
-    "productType",
     "productID",
     "productURL",
-    "processingLevel",
+    "location",
     "productFormat",
-    "location"
+    "sensingDate"
   ]
 }

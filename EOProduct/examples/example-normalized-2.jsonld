@@ -39,9 +39,10 @@
     "type": "Property",
     "value": "SAFE"
   },
-  "timeliness": {
+  "cloudCoverage": {
     "type": "Property",
-    "value": "Fast-24h"
+    "value": 19.125499,
+    "unitCode": "P1"
   },
   "orbitDirection": {
     "type": "Property",
@@ -49,34 +50,34 @@
   },
   "orbitNumber": {
     "type": "Property",
-    "value": 7
+    "value": 93
   },
   "ingestionDate": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-02-01T08:26:25.020Z"
+      "@value": "2021-01-18T18:29:16.884Z"
     }
   },
   "sensingDate": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-02-01T04:29:50.264Z"
+      "@value": "2021-01-18T09:23:21.024Z"
     }
   },
   "sensingStartedAt": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-02-01T04:29:50.264Z"
+      "@value": "2021-01-18T09:23:21.024Z"
     }
   },
   "sensingStoppedAt": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "2021-02-01T04:30:15.263Z"
+      "@value": "2021-01-18T09:23:21.024Z"
     }
   },
   "@context": [

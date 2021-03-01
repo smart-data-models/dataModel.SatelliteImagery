@@ -18,10 +18,6 @@
             "EOSatellitePlatform"
           ]
         },
-        "operator": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the unique ID of the platform"
-        },
         "platformID": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the unique ID of the platform"
@@ -39,9 +35,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "platformID",
-    "platformName",
-    "platformNSSDCA"
+    "type"
   ]
 }

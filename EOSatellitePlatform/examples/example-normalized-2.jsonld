@@ -5,15 +5,15 @@
   "modifiedAt": "2020-03-13T15:45:00Z",
   "platformID": {
     "type": "Property",
-    "value": "B"
+    "value": "A"
   },
   "platformName": {
     "type": "Property",
-    "value": "Sentinel-1"
+    "value": "Sentinel-2"
   },
   "platformNSSDCA": {
     "type": "Property",
-    "value": "2016-025A"
+    "value": "2015-028A"
   },
   "@context": [
     "https://schema.lab.fiware.org/ld/context"

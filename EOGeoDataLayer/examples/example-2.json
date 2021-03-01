@@ -1,25 +1,25 @@
 {
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",
   "type": "EOGeoDataLayer",
-  "localServerPath": "/data/www/water_mask.tif",
+  "localServerPath": "/data/www/oil_map.tif",
   "storageFormat": "GeoTIFF",
-  "geoMetadata": "/data/www/metadata.xml",
+  "geoMetadata": "/data/www/metadata_oil.xml",
   "contentInformation": [
     {
       "layer_name": "band1",
       "layer_categorization": "categorical",
-      "values_explanation": [ "1:inundated", "0:non inundated" ]
+      "values_explanation": [ "1:oil", "0:water" ]
     }
   ],
   "location": {
     "type": "Polygon",
     "coordinates": [
       [
-        [ 23.6627, 41.88768 ],
-        [ 25.85598, 43.38622 ],
-        [ 23.4899, 43.78691 ],
-        [ 22.35609, 42.28869 ],
-        [ 23.6627, 41.88769 ]
+        [ 23.48993, 42.415 ],
+        [ 23.66274, 42.415 ],
+        [ 23.66274, 42.53524 ],
+        [ 23.48993, 42.53524 ],
+        [ 23.48993, 42.415 ]
       ]
     ]
   },

@@ -21,7 +21,7 @@
             "EOAnalysis"
           ]
         },
-        "analysedAt": {
+        "analyzedAt": {
           "type": "string",
           "format": "date-time",
           "description": "Property. Model:'https://schema.org/Time'. The time at which the analysis finished"
@@ -30,12 +30,9 @@
           "type": "string",
           "description": "Property.  Model:'https://schema.org/Text'. Units:'No unit'. The provider of the algorithm"
         },
-        "resultValues": {
-          "type": "array",
-          "description": "Property. Entity's output values explanation.",
-          "items": {
-            "type": "string"
-          }
+        "resultDescription": {
+          "type": "string",
+          "description": "Property. The description of the analysis outcome."
         },
         "analysisType": {
           "type": "string",
@@ -52,10 +49,7 @@
   "required": [
     "id",
     "type",
-    "analysedAt",
-    "provider",
-    "resultValues",
     "analysisType",
-    "location"
+    "provider"
   ]
 }

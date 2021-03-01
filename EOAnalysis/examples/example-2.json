@@ -3,17 +3,17 @@
   "type": "EOAnalysis",
   "analyzedAt": "2020-12-24T12:00:00Z",
   "provider": "aqua3S/CERTH",
-  "resultDescription": "The detected flooded areas cover 1000 square meters",
+  "resultDescription": "The detected oil covers 1000 square meters",
   "analysisType": "Flood Detection",
   "location": {
     "type": "Polygon",
     "coordinates": [
       [
-        [ 23.6627, 41.88768 ],
-        [ 25.85598, 43.38622 ],
-        [ 23.4899, 43.78691 ],
-        [ 22.35609, 42.28869 ],
-        [ 23.6627, 41.88769 ]
+        [ 23.48993, 42.415 ],
+        [ 23.66274, 42.415 ],
+        [ 23.66274, 42.53524 ],
+        [ 23.48993, 42.53524 ],
+        [ 23.48993, 42.415 ]
       ]
     ]
   },
