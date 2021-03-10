@@ -13,8 +13,7 @@
   },
   "storageFormat": {
     "type": "string",
-    "value": [ "GeoTIFF", "ESRI Shapefile"],
-    "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
+    "value": [ "GeoTIFF", "ESRI Shapefile"]
   },
   "areaLocation": {
     "type": "GeoProperty",
