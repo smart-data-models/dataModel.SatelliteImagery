@@ -28,7 +28,7 @@
         },
         "provider": {
           "type": "string",
-          "description": "Property.  Model:'https://schema.org/Text'. Units:'No unit'. The provider of the algorithm"
+          "description": "Property.  Model:'https://schema.org/Text'. The provider of the algorithm"
         },
         "resultDescription": {
           "type": "string",
