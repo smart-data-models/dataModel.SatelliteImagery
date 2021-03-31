@@ -4,5 +4,8 @@
   "instrumentID": "MSI",
   "instrumentName": "Multi-Spectral Instrument",
   "swathID": "S2",
-  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"
+  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }

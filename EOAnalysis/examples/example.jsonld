@@ -1,0 +1,39 @@
+{
+  "id": "EOAnalysis:02",
+  "type": "EOAnalysis",
+  "analyzedAt": "2020-12-24T12:00:00Z",
+  "provider": "aqua3S/CERTH",
+  "resultDescription": "The detected oil covers 1000 square meters",
+  "analysisType": "Flood Detection",
+  "location": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          23.48993,
+          42.415
+        ],
+        [
+          23.66274,
+          42.415
+        ],
+        [
+          23.66274,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.415
+        ]
+      ]
+    ]
+  },
+  "isAnalysisOf": "urn:ngsi-ld:EOProduct:123",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

@@ -14,8 +14,5 @@
   "platformNSSDCA": {
     "type": "Property",
     "value": "2015-028A"
-  },
-  "@context": [
-    "https://schema.lab.fiware.org/ld/context"
-  ]
+  }
 }

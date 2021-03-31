@@ -41,5 +41,8 @@
   "sensingStartedAt": "2021-01-18T09:23:21.024Z",
   "sensingStoppedAt": "2021-01-18T09:23:21.024Z",
   "hostedOn": "urn:ngsi-ld:EODataHub:123",
-  "observedBy": "urn:ngsi-ld:EOInstrument:154"
+  "observedBy": "urn:ngsi-ld:EOInstrument:154",
+  "@context": [
+    "https://schema.lab.fiware.org/ld/context"
+  ]
 }

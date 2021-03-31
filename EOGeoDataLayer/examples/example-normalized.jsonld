@@ -12,38 +12,57 @@
     "value": "/data/www/water_mask.tif"
   },
   "storageFormat": {
-    "type": "string",
-    "value": "GeoTIFF",
-    "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
+    "type": "Property",
+    "value": "GeoTIFF"
   },
   "geoMetadata": {
     "type": "Property",
     "value": "/data/www/metadata.xml"
   },
-  "contentInformation": {[
-    {
-      "layer_name": "band1",
-      "layer_categorization": "categorical",
-      "values_explanation": [ "1:inundated", "0:non inundated" ]
-    }
-  ]},
+  "contentInformation": {
+    "type": "Property",
+    "value": [
+      {
+        "layer_name": "band1",
+        "layer_categorization": "categorical",
+        "values_explanation": [
+          "1:inundated",
+          "0:non inundated"
+        ]
+      }
+    ]
+  },
   "location": {
     "type": "GeoProperty",
     "value": {
       "type": "Polygon",
       "coordinates": [
         [
-          [ 23.6627, 41.88768 ],
-          [ 25.85598, 43.38622 ],
-          [ 23.4899, 43.78691 ],
-          [ 22.35609, 42.28869 ],
-          [ 23.6627, 41.88769 ]
+          [
+            23.6627,
+            41.88768
+          ],
+          [
+            25.85598,
+            43.38622
+          ],
+          [
+            23.4899,
+            43.78691
+          ],
+          [
+            22.35609,
+            42.28869
+          ],
+          [
+            23.6627,
+            41.88769
+          ]
         ]
       ]
-
     }
   },
   "@context": [
-    "https://schema.lab.fiware.org/ld/context"
+    "https://smartdatamodels.org/context.jsonld"
   ]
 }

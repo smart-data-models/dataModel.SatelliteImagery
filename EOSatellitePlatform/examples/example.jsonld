@@ -3,5 +3,8 @@
   "type": "EOSatellitePlatform",
   "platformID": "A",
   "platformName": "Sentinel-2",
-  "platformNSSDCA": "2015-028A"
+  "platformNSSDCA": "2015-028A",
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
 }

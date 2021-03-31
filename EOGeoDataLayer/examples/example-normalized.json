@@ -12,9 +12,8 @@
     "value": "/data/www/oil_map.tif"
   },
   "storageFormat": {
-    "type": "string",
-    "value": "GeoTIFF",
-    "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"
+    "type": "Property",
+    "value": "GeoTIFF"
   },
   "geoMetadata": {
     "type": "Property",
@@ -24,7 +23,10 @@
     {
       "layer_name": "band1",
       "layer_categorization": "categorical",
-      "values_explanation": [ "1:oil", "0:water" ]
+      "values_explanation": [
+        "1:oil",
+        "0:water"
+      ]
     }
   ],
   "location": {
@@ -33,16 +35,28 @@
       "type": "Polygon",
       "coordinates": [
         [
-          [ 23.48993, 42.415 ],
-          [ 23.66274, 42.415 ],
-          [ 23.66274, 42.53524 ],
-          [ 23.48993, 42.53524 ],
-          [ 23.48993, 42.415 ]
+          [
+            23.48993,
+            42.415
+          ],
+          [
+            23.66274,
+            42.415
+          ],
+          [
+            23.66274,
+            42.53524
+          ],
+          [
+            23.48993,
+            42.53524
+          ],
+          [
+            23.48993,
+            42.415
+          ]
         ]
       ]
     }
-  },
-  "@context": [
-    "https://schema.lab.fiware.org/ld/context"
-  ]
+  }
 }

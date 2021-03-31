@@ -18,8 +18,5 @@
   "swathID": {
     "type": "Property",
     "value": "S2"
-  },
-  "@context": [
-    "https://schema.lab.fiware.org/ld/context"
-  ]
+  }
 }
