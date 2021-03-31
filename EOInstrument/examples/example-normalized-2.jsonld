@@ -9,23 +9,15 @@
   },
   "instrumentID": {
     "type": "Property",
-    "value": "SAR-C"
+    "value": "MSI"
   },
   "instrumentName": {
     "type": "Property",
-    "value": "Synthetic Aperture Radar (C-band)"
-  },
-  "operationalMode": {
-    "type": "Property",
-    "value": "IW"
-  },
-  "polarizaionMode": {
-    "type": "Property",
-    "value": "VV + VH"
+    "value": "Multi-Spectral Instrument"
   },
   "swathID": {
     "type": "Property",
-    "value": "S1"
+    "value": "S2"
   },
   "@context": [
     "https://schema.lab.fiware.org/ld/context"

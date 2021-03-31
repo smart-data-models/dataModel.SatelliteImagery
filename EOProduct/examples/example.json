@@ -1,44 +1,30 @@
 {
   "id": "urn:ngsi-ld:EOProduct:123",
   "type": "EOProduct",
-  "productID": "S3B_OL_1_ERR____20201120T143017_20201120T151432_20201121T182138_2655_046_039______LN1_O_NT_002",
-  "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('af2b183a-e0d5-422d-be8a-eafee42ba5b1')/$value",
-  "productType": "OL_1_ERR___",
+  "productID": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29",
+  "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value",
+  "productType": "GRD",
   "processingLevel": "L1",
   "location": {
     "type": "Polygon",
     "coordinates": [
       [
-        [
-          -67.137,
-          45.13
-        ],
-        [
-          -66.964,
-          44.8097
-        ],
-        [
-          -68.052,
-          44.3252
-        ],
-        [
-          -70.75,
-          43.08
-        ],
-        [
-          -67.137,
-          45.13
-        ]
+        [ 25.4464, 41.887688 ],
+        [ 25.855984, 43.386223 ],
+        [ 22.690121, 43.786907 ],
+        [ 22.356091, 42.288685 ],
+        [ 25.4464, 41.887688 ]
       ]
     ]
   },
   "productFormat": "SAFE",
-  "cloudCoverage": 25,
-  "timeliness": "Not time critical",
-  "orbitDirection": "Ascending",
-  "orbitNumber": 111,
-  "ingestionDate": "2020-12-24T12:00:00Z",
-  "sensingDate": "2020-12-24T12:00:00Z",
-  "sensingStartedAt": "2020-12-24T12:00:00Z",
-  "sensingStoppedAt": "2020-12-24T12:00:00Z"
+  "timeliness": "Fast-24h",
+  "orbitDirection": "Descending",
+  "orbitNumber": 7,
+  "ingestionDate": "2021-02-01T08:26:25.020Z",
+  "sensingDate": "2021-02-01T04:29:50.264Z",
+  "sensingStartedAt": "2021-02-01T04:29:50.264Z",
+  "sensingStoppedAt": "2021-02-01T04:30:15.263Z",
+  "hostedOn": "urn:ngsi-ld:EODataHub:123",
+  "observedBy": "urn:ngsi-ld:EOInstrument:154"
 }

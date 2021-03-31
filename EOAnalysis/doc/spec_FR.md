@@ -1,14 +1,14 @@
-Entity: EOAnalysis  
-==================  
-[Open License](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOAnalysis/LICENSE.md)  
-Global description: **This entity contains a harmonised description of a generic EOAnalysis made for the Satellite Imagerry domain. This entity is primarily associated with the process of analysis of Earth Observation applications.**  
+Entité : EOAnalysis  
+===================  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOAnalysis/LICENSE.md)  
+Description globale : **Cette entité contient une description harmonisée d'une analyse générique de l'orbite effectuée pour le domaine de l'imagerie par satellite. Cette entité est principalement associée au processus d'analyse des applications d'observation de la Terre.**  
 
-## List of properties  
+## Liste des biens  
 
-- `analysedAt`: The time at which the analysis finished  - `analysisType`: Entity's type of analysis applied.  - `areaLocation`:   - `isAnalysisOf`: The ID of the product that was used in the analysis  - `provider`: The provider of the algorithm  - `resultValues`: Entity's output values explanation.  - `type`: NGSI-LD Entity Type. It must be equal to EOAnalysis.    
-Required properties  
-- `analysedAt`  - `analysisType`  - `areaLocation`  - `id`  - `provider`  - `resultValues`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `analysedAt`: L'heure à laquelle l'analyse s'est terminée  - `analysisType`: Le type d'analyse de l'entité appliquée.  - `areaLocation`:   - `isAnalysisOf`: L'identification du produit qui a été utilisé dans l'analyse  - `provider`: Le fournisseur de l'algorithme  - `resultValues`: Explication des valeurs de sortie de l'entité.  - `type`: Type d'entité NGSI-LD. Il doit être égal à EOAnalysis.    
+Propriétés requises  
+- `analysedAt`  - `analysisType`  - `areaLocation`  - `id`  - `provider`  - `resultValues`  - `type`  ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOAnalysis:    
@@ -86,60 +86,43 @@ EOAnalysis:
   type: object    
 ```  
 </details>    
-## Example payloads    
-#### EOAnalysis NGSI V2 key-values Example    
-Here is an example of a EOAnalysis in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Exemples de charges utiles  
+#### EOAnalysis NGSI V2 key-values Example  
+Voici un exemple d'analyse d'émissions en format JSON en tant que valeurs clés. Il est compatible avec NGSI V2 lorsque l'on utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
-  "id": "EOAnalysis:03",  
+  "id": "EOAnalysis:02",  
   "type": "EOAnalysis",  
-  "analysedAt": "2020-12-24T12:00:00Z",  
-  "provider": "AQUA3s/CERTH",  
-  "resultValues": [  
-    "0:flooded",  
-    "1:not flooded"  
-  ],  
-  "analysisType": "Flood detection",  
-  "areaLocation": {  
+  "analyzedAt": "2020-12-24T12:00:00Z",  
+  "provider": "aqua3S/CERTH",  
+  "resultDescription": "The detected flooded areas cover 1000 square meters",  
+  "analysisType": "Flood Detection",  
+  "location": {  
     "type": "Polygon",  
     "coordinates": [  
       [  
-        [  
-          -67.137,  
-          45.13  
-        ],  
-        [  
-          -66.964,  
-          44.8097  
-        ],  
-        [  
-          -68.052,  
-          44.3252  
-        ],  
-        [  
-          -70.75,  
-          43.08  
-        ],  
-        [  
-          -67.137,  
-          45.13  
-        ]  
+        [ 23.6627, 41.88768 ],  
+        [ 25.85598, 43.38622 ],  
+        [ 23.4899, 43.78691 ],  
+        [ 22.35609, 42.28869 ],  
+        [ 23.6627, 41.88769 ]  
       ]  
     ]  
-  }  
+  },  
+  "isAnalysisOf": "urn:ngsi-ld:EOProduct:123"  
 }  
 ```  
-Not available the example of a EOAnalysis in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
-Not available the example of a EOAnalysis in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-#### EOAnalysis NGSI-LD normalized Example    
-Here is an example of a EOAnalysis in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Non disponible l'exemple d'une analyse d'urine en format JSON comme normalisé. Il est compatible avec NGSI V2 lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une analyse d'émissions en format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### EOAnalysis NGSI-LD normalisé Exemple  
+Voici un exemple d'une analyse d'urine en format JSON-LD normalisé. Ce format est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOAnalysis:02",  
   "type": "EOAnalysis",  
   "createdAt": "2020-03-13T15:42:00Z",  
   "modifiedAt": "2020-03-13T15:45:00Z",  
-  "analysedAt": {  
+  "analyzedAt": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
@@ -152,38 +135,27 @@ EOAnalysis:
   },  
   "provider": {  
     "type": "Property",  
-    "value": "AQUA3s/CERTH"  
+    "value": "aqua3S/CERTH"  
   },  
-  "resultValues": {  
+  "resultDescription": {  
     "type": "Property",  
-    "value": [ "0:flooded", "1:not flooded" ]  
+    "value": "The detected flooded areas cover 1000 square meters"  
   },  
   "analysisType": {  
     "type": "Property",  
-    "value": [ "Oil spill detection", "Flood detection", "Alge bloom detection" ]  
+    "value": "Flood Detection"  
   },  
-  "areaLocation": {  
+  "location": {  
     "type": "GeoProperty",  
     "value": {  
       "type": "Polygon",  
       "coordinates": [  
         [  
-          -67.137,  
-          45.13  
-        ],  
-        [  
-          -66.964,  
-          44.8097  
-        ],  
-        [  
-          -68.052,  
-          44.3252  
-        ],  
-        [ -70.75,  
-          43.08   
-        ],  
-        [ -67.137,  
-          45.13  
+          [ 23.6627, 41.88768 ],  
+          [ 25.85598, 43.38622 ],  
+          [ 23.4899, 43.78691 ],  
+          [ 22.35609, 42.28869 ],  
+          [ 23.6627, 41.88769 ]  
         ]  
       ]  
     }  

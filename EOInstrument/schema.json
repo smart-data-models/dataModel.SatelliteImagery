@@ -48,9 +48,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "instrumentID",
-    "instrumentName",
-    "operationalMode"
+    "type"
   ]
 }

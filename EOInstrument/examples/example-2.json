@@ -1,0 +1,8 @@
+{
+  "id": "urn:ngsi-ld:EOInstrument:154",
+  "type": "EOInstrument",
+  "instrumentID": "MSI",
+  "instrumentName": "Multi-Spectral Instrument",
+  "swathID": "S2",
+  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"
+}

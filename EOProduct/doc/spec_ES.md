@@ -1,14 +1,14 @@
-Entity: EOProduct  
-=================  
-[Open License](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOProduct/LICENSE.md)  
-Global description: **This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.**  
+Entidad: EOProducto  
+===================  
+[Licencia abierta](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOProduct/LICENSE.md)  
+Descripción global: **Esta entidad contiene una descripción armonizada de un EOProducto genérico realizado para el dominio de la Imaginería Satelital. Esta entidad está asociada principalmente a los productos de satélite relacionados con las aplicaciones de análisis de la observación de la Tierra.**  
 
-## List of properties  
+## Lista de propiedades  
 
-- `areaLocation`:   - `cloudCoverage`: The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.  - `ingestionDate`:   - `orbitDirection`: The orbit pass orientation  - `orbitNumber`: The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.  - `processingLevel`: A mandatory text string used to declare the processing level of the product  - `productFormat`: A mandatory text string used to declare the format of the product  - `productID`: A mandatory text string used to declare the unique ID of the product  - `productType`: A mandatory text string used to declare the type of the product  - `productURL`: A mandatory url used to declare the downlaod link of the product  - `sensingDate`:   - `sensingStartedAt`:   - `sensingStoppedAt`:   - `timeliness`: The timeliness of the product  - `type`: NGSI-LD Entity Type. It must be equal to EOProduct.    
-Required properties  
-- `areaLocation`  - `id`  - `processingLevel`  - `productFormat`  - `productID`  - `productType`  - `productURL`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `areaLocation`:   - `cloudCoverage`: El porcentaje de cobertura de las nubes. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html).  - `ingestionDate`:   - `orbitDirection`: La orientación del paso de la órbita  - `orbitNumber`: El número de órbita del pase del satélite. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html).  - `processingLevel`: Cadena de texto obligatoria utilizada para declarar el nivel de procesamiento del producto  - `productFormat`: Cadena de texto obligatoria utilizada para declarar el formato del producto  - `productID`: Cadena de texto obligatoria utilizada para declarar el ID único del producto  - `productType`: Cadena de texto obligatoria utilizada para declarar el tipo de producto  - `productURL`: Una url obligatoria utilizada para declarar el enlace de descarga del producto  - `sensingDate`:   - `sensingStartedAt`:   - `sensingStoppedAt`:   - `timeliness`: La puntualidad del producto  - `type`: Tipo de entidad NGSI-LD. Debe ser igual a EOProducto.    
+Propiedades requeridas  
+- `areaLocation`  - `id`  - `processingLevel`  - `productFormat`  - `productID`  - `productType`  - `productURL`  - `type`  ## Descripción del modelo de datos de las propiedades  
+Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOProduct:    
@@ -124,59 +124,45 @@ EOProduct:
   type: object    
 ```  
 </details>    
-## Example payloads    
-#### EOProduct NGSI V2 key-values Example    
-Here is an example of a EOProduct in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Ejemplo de carga útil  
+#### EOProduct NGSI V2 key-values Ejemplo  
+Aquí hay un ejemplo de un EOProducto en formato JSON como valores-clave. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
   "type": "EOProduct",  
-  "productID": "S3B_OL_1_ERR____20201120T143017_20201120T151432_20201121T182138_2655_046_039______LN1_O_NT_002",  
-  "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('af2b183a-e0d5-422d-be8a-eafee42ba5b1')/$value",  
-  "productType": "OL_1_ERR___",  
+  "productID": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29",  
+  "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value",  
+  "productType": "GRD",  
   "processingLevel": "L1",  
-  "areaLocation": {  
+  "location": {  
     "type": "Polygon",  
     "coordinates": [  
       [  
-        [  
-          -67.137,  
-          45.13  
-        ],  
-        [  
-          -66.964,  
-          44.8097  
-        ],  
-        [  
-          -68.052,  
-          44.3252  
-        ],  
-        [  
-          -70.75,  
-          43.08  
-        ],  
-        [  
-          -67.137,  
-          45.13  
-        ]  
+        [ 25.4464, 41.887688 ],  
+        [ 25.855984, 43.386223 ],  
+        [ 22.690121, 43.786907 ],  
+        [ 22.356091, 42.288685 ],  
+        [ 25.4464, 41.887688 ]  
       ]  
     ]  
   },  
   "productFormat": "SAFE",  
-  "cloudCoverage": 25,  
-  "timeliness": "Not time critical",  
-  "orbitDirection": "Ascending",  
-  "orbitNumber": 111,  
-  "ingestionDate": "2020-12-24T12:00:00Z",  
-  "sensingDate": "2020-12-24T12:00:00Z",  
-  "sensingStartedAt": "2020-12-24T12:00:00Z",  
-  "sensingStoppedAt": "2020-12-24T12:00:00Z"  
+  "timeliness": "Fast-24h",  
+  "orbitDirection": "Descending",  
+  "orbitNumber": 7,  
+  "ingestionDate": "2021-02-01T08:26:25.020Z",  
+  "sensingDate": "2021-02-01T04:29:50.264Z",  
+  "sensingStartedAt": "2021-02-01T04:29:50.264Z",  
+  "sensingStoppedAt": "2021-02-01T04:30:15.263Z",  
+  "hostedOn": "urn:ngsi-ld:EODataHub:123",  
+  "observedBy": "urn:ngsi-ld:EOInstrument:154"  
 }  
 ```  
-Not available the example of a EOProduct in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
-Not available the example of a EOProduct in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-#### EOProduct NGSI-LD normalized Example    
-Here is an example of a EOProduct in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+No está disponible el ejemplo de un EOProducto en formato JSON como normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+No está disponible el ejemplo de un EOProducto en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### EOProducto NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un EOProducto en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
@@ -185,44 +171,31 @@ EOProduct:
   "modifiedAt": "2020-03-13T15:45:00Z",  
   "productID": {  
     "type": "Property",  
-    "value": "S3B_OL_1_ERR____20201120T143017_20201120T151432_20201121T182138_2655_046_039______LN1_O_NT_002"  
+    "value": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29"  
   },  
   "productURL": {  
     "type": "url",  
-    "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('af2b183a-e0d5-422d-be8a-eafee42ba5b1')/$value"  
+    "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value"  
   },  
   "productType": {  
     "type": "Property",  
-    "value": "OL_1_ERR___"  
+    "value": "GRD"  
   },  
   "processingLevel": {  
     "type": "Property",  
     "value": "L1"  
   },  
-  "areaLocation": {  
+  "location": {  
     "type": "GeoProperty",  
     "value": {  
       "type": "Polygon",  
       "coordinates": [  
         [  
-          -67.137,  
-          45.13  
-        ],  
-        [  
-          -66.964,  
-          44.8097  
-        ],  
-        [  
-          -68.052,  
-          44.3252  
-        ],  
-        [  
-          -70.75,  
-          43.08  
-        ],  
-        [  
-          -67.137,  
-          45.13  
+          [ 25.4464, 41.887688 ],  
+          [ 25.855984, 43.386223 ],  
+          [ 22.690121, 43.786907 ],  
+          [ 22.356091, 42.288685 ],  
+          [ 25.4464, 41.887688 ]  
         ]  
       ]  
     }  
@@ -231,49 +204,44 @@ EOProduct:
     "type": "Property",  
     "value": "SAFE"  
   },  
-  "cloudCoverage": {  
-    "type": "Property",  
-    "value": 25,  
-    "unitCode": "P1"  
-  },  
   "timeliness": {  
     "type": "Property",  
-    "value": "Non Time Critical"  
+    "value": "Fast-24h"  
   },  
   "orbitDirection": {  
     "type": "Property",  
-    "value": [ "Ascending", "Descending" ]  
+    "value": "Descending"  
   },  
   "orbitNumber": {  
     "type": "Property",  
-    "value": 111  
+    "value": 7  
   },  
   "ingestionDate": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "2020-12-24T12:00:00Z"  
+      "@value": "2021-02-01T08:26:25.020Z"  
     }  
   },  
   "sensingDate": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "2020-12-24T12:00:00Z"  
+      "@value": "2021-02-01T04:29:50.264Z"  
     }  
   },  
   "sensingStartedAt": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "2020-12-24T12:00:00Z"  
+      "@value": "2021-02-01T04:29:50.264Z"  
     }  
   },  
   "sensingStoppedAt": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "2020-12-24T12:00:00Z"  
+      "@value": "2021-02-01T04:30:15.263Z"  
     }  
   },  
   "@context": [  

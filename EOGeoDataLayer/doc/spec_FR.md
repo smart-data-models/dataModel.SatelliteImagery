@@ -1,14 +1,14 @@
-Entity: EOGeoDataLayer  
-======================  
-[Open License](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md)  
-Global description: **This entity contains a harmonised description of a generic EOGeoDataLayer made for the Satellite Imagerry domain. This entity is primarily associated with the output data layers related to Earth Observation Analysis applications.**  
+Entité : EOGeoDataLayer  
+=======================  
+[Licence ouverte](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md)  
+Description globale : **Cette entité contient une description harmonisée d'une couche de données EOGeo générique faite pour le domaine de l'imagerie par satellite. Cette entité est principalement associée aux couches de données de sortie liées aux applications d'analyse d'observation de la Terre.**  
 
-## List of properties  
+## Liste des biens  
 
-- `areaLocation`:   - `isOutputOf`: The ID of the analysis that was performed to extract this data layer  - `localServerPath`: A mandatory text string used to declare the path that the output data layer is saved on the server  - `metadata`: Metadata. Contains core metadata of the produces data layer  - `storageFormat`: Entity's satorage format.  - `type`: NGSI-LD Entity Type. It must be equal to EOGeoDataLayer.    
-Required properties  
-- `areaLocation`  - `id`  - `localServerPath`  - `metadata`  - `storageFormat`  - `type`  ## Data Model description of properties  
-Sorted alphabetically (click for details)  
+- `areaLocation`:   - `isOutputOf`: L'ID de l'analyse qui a été effectuée pour extraire cette couche de données  - `localServerPath`: Une chaîne de texte obligatoire utilisée pour déclarer le chemin d'accès à la couche de données de sortie sur le serveur  - `metadata`: Métadonnées. Contient les métadonnées de base de la couche de données produite  - `storageFormat`: Le format satorage de l'entité.  - `type`: Type d'entité NGSI-LD. Il doit être égal à EOGeoDataLayer.    
+Propriétés requises  
+- `areaLocation`  - `id`  - `localServerPath`  - `metadata`  - `storageFormat`  - `type`  ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOGeoDataLayer:    
@@ -83,54 +83,42 @@ EOGeoDataLayer:
   type: object    
 ```  
 </details>    
-## Example payloads    
-#### EOGeoDataLayer NGSI V2 key-values Example    
-Here is an example of a EOGeoDataLayer in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
+## Exemples de charges utiles  
+#### EOGeoDataLayer NGSI V2 Exemple de valeurs clés  
+Voici un exemple de couche de données EOGeoDataLayer au format JSON comme valeurs clés. Elle est compatible avec la version 2 du NGSI lorsqu'elle utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
   "type": "EOGeoDataLayer",  
   "localServerPath": "/data/www/water_mask.tif",  
   "storageFormat": "GeoTIFF",  
-  "areaLocation": {  
+  "geoMetadata": "/data/www/metadata.xml",  
+  "contentInformation": [  
+    {  
+      "layer_name": "band1",  
+      "layer_categorization": "categorical",  
+      "values_explanation": [ "1:inundated", "0:non inundated" ]  
+    }  
+  ],  
+  "location": {  
     "type": "Polygon",  
     "coordinates": [  
       [  
-        -67.137,  
-        45.13  
-      ],  
-      [  
-        -66.964,  
-        44.8097  
-      ],  
-      [  
-        -68.052,  
-        44.3252  
-      ],  
-      [  
-        -70.75,  
-        43.08  
-      ],  
-      [  
-        -67.137,  
-        45.13  
+        [ 23.6627, 41.88768 ],  
+        [ 25.85598, 43.38622 ],  
+        [ 23.4899, 43.78691 ],  
+        [ 22.35609, 42.28869 ],  
+        [ 23.6627, 41.88769 ]  
       ]  
     ]  
   },  
-  "metadata": {  
-    "type": "Property",  
-    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],  
-    "crs": {  
-      "type": "Property",  
-      "value": "EPSG:4326"  
-    }  
-  }  
+  "isOutputOf": "EOAnalysis:02"  
 }  
 ```  
-Not available the example of a EOGeoDataLayer in JSON format as normalized. This is compatible with NGSI V2 when not using options and returns the context data of an individual entity.  
-Not available the example of a EOGeoDataLayer in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
-#### EOGeoDataLayer NGSI-LD normalized Example    
-Here is an example of a EOGeoDataLayer in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+Non disponible l'exemple d'une couche de données EOGeoDataLayer en format JSON comme normalisé. Cette couche est compatible avec la version 2 du NGSI lorsqu'elle n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Non disponible l'exemple d'une couche de données EOGeoDataLayer au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### EOGeoDataLayer NGSI-LD normalisé Exemple  
+Voici un exemple de couche de données EOGeoDataLayer au format JSON-LD normalisé. Cette couche est compatible avec le format NGSI-LD lorsqu'elle n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
@@ -147,43 +135,33 @@ EOGeoDataLayer:
   },  
   "storageFormat": {  
     "type": "string",  
-    "value": [ "GeoTIFF", "ESRI Shapefile"],  
+    "value": "GeoTIFF",  
     "description": "Property. Model:'https://schema.org/Text'. The format of the processed data layer"  
   },  
-  "areaLocation": {  
+  "geoMetadata": {  
+    "type": "Property",  
+    "value": "/data/www/metadata.xml"  
+  },  
+  "contentInformation": {[  
+    {  
+      "layer_name": "band1",  
+      "layer_categorization": "categorical",  
+      "values_explanation": [ "1:inundated", "0:non inundated" ]  
+    }  
+  ]},  
+  "location": {  
     "type": "GeoProperty",  
     "value": {  
       "type": "Polygon",  
       "coordinates": [  
         [  
-          -67.137,  
-          45.13  
-        ],  
-        [  
-          -66.964,  
-          44.8097  
-        ],  
-        [  
-          -68.052,  
-          44.3252  
-        ],  
-        [  
-          -70.75,  
-          43.08  
-        ],  
-        [  
-          -67.137,  
-          45.13  
+          [ 23.6627, 41.88768 ],  
+          [ 25.85598, 43.38622 ],  
+          [ 23.4899, 43.78691 ],  
+          [ 22.35609, 42.28869 ],  
+          [ 23.6627, 41.88769 ]  
         ]  
       ]  
-    }  
-  },  
-  "metadata": {  
-    "type": "Property",  
-    "value": [ "https://inspire.ec.europa.eu/id/document/tg/ef", "https://inspire.ec.europa.eu/id/document/tg/am" ],  
-    "crs": {  
-      "type": "Property",  
-      "value": "EPSG:4326"  
     }  
   },  
   "@context": [  
