@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:EOProduct:123",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          24.7578584453215,
+          42.3024516155518
+        ],
+        [
+          24.8181237036864,
+          43.2890817991595
+        ],
+        [
+          23.4662891411315,
+          43.3262569717781
+        ],
+        [
+          23.4272955487519,
+          42.3383721018908
+        ],
+        [
+          24.7578584453215,
+          42.3024516155518
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "type": "EOProduct",
+    "productID": "S2A_MSIL2A_20210118T092321_N0214_R093_T34TGN_20210118T120704",
+    "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('698c2089-704f-4d4f-aa2f-977902e2d35e')/$value",
+    "productType": "S2MSI2A",
+    "processingLevel": "Level-2A",
+    "location": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            24.7578584453215,
+            42.3024516155518
+          ],
+          [
+            24.8181237036864,
+            43.2890817991595
+          ],
+          [
+            23.4662891411315,
+            43.3262569717781
+          ],
+          [
+            23.4272955487519,
+            42.3383721018908
+          ],
+          [
+            24.7578584453215,
+            42.3024516155518
+          ]
+        ]
+      ]
+    },
+    "productFormat": "SAFE",
+    "cloudCoverage": 19.125499,
+    "orbitDirection": "Descending",
+    "orbitNumber": 93,
+    "ingestionDate": "2021-01-18T18:29:16.884Z",
+    "sensingDate": "2021-01-18T09:23:21.024Z",
+    "sensingStartedAt": "2021-01-18T09:23:21.024Z",
+    "sensingStoppedAt": "2021-01-18T09:23:21.024Z",
+    "hostedOn": "urn:ngsi-ld:EODataHub:123",
+    "observedBy": "urn:ngsi-ld:EOInstrument:154",
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]
+  }
+}
