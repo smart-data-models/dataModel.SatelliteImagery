@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngsi-ld:EOGeoDataLayer:1",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          23.48993,
+          42.415
+        ],
+        [
+          23.66274,
+          42.415
+        ],
+        [
+          23.66274,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.415
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "type": "EOGeoDataLayer",
+    "localServerPath": "/data/www/oil_map.tif",
+    "storageFormat": "GeoTIFF",
+    "geoMetadata": "/data/www/metadata_oil.xml",
+    "contentInformation": [
+      {
+        "layer_name": "band1",
+        "layer_categorization": "categorical",
+        "values_explanation": [
+          "1:oil",
+          "0:water"
+        ]
+      }
+    ],
+    "location": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            23.48993,
+            42.415
+          ],
+          [
+            23.66274,
+            42.415
+          ],
+          [
+            23.66274,
+            42.53524
+          ],
+          [
+            23.48993,
+            42.53524
+          ],
+          [
+            23.48993,
+            42.415
+          ]
+        ]
+      ]
+    },
+    "isOutputOf": "EOAnalysis:02",
+    "@context": [
+      "https://smartdatamodels.org/context.jsonld"
+    ]
+  }
+}
