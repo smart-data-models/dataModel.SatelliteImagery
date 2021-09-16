@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
     "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOProduct/schema.json",
     "title": "Satellite Imagery - EOProduct",
     "description": "This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.",
