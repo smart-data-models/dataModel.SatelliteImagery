@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
     "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOGeoDataLayer/schema.json",
     "title": "Satellite Imagery - EOGeoDataLayer",
     "description": "This entity contains a harmonised description of a generic EOGeoDataLayer made for the Satellite Imagerry domain. This entity is primarily associated with the output data layers related to Earth Observation Analysis applications.",
