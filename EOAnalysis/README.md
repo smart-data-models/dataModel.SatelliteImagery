@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic EOAnalysis made for the Satellite Imagerry domain. This entity is primarily associated with the process of analysis of Earth Observation applications.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOAnalysis/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOAnalysis/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOAnalysis/doc/spec.md)
 
