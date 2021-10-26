@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOProduct/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOProduct/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOProduct/doc/spec.md)
 
