@@ -6,7 +6,7 @@ Version: 0.0.1
 This entity contains a harmonised description of a generic EOInstrument made for the Satellite Imagerry domain. This entity is primarily associated with the data hub related to Earth Observation Analysis applications.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EODataHub/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EODataHub/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EODataHub/doc/spec.md)
 
