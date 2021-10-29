@@ -176,7 +176,7 @@ EOInstrument:
 }  
 ```  
 #### EOInstrument NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein EOInstrument im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein EOInstrument im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOInstrument:154",  
