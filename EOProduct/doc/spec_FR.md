@@ -6,7 +6,7 @@ Entité : EOProduct
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `cloudCoverage`: Le pourcentage de couverture nuageuse. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `hostedOn`: L'ID du centre de données sur lequel le produit est hébergé.  - `id`: Identifiant unique de l'entité  - `ingestionDate`: La date à laquelle les données ont été mises à disposition dans les archives en ligne.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `observedBy`: L'ID de l'instrument par lequel le produit a été observé  - `orbitDirection`: L'orientation du passage de l'orbite  - `orbitNumber`: Le numéro d'orbite du passage du satellite. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html).  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `processingLevel`: Une chaîne de texte obligatoire utilisée pour déclarer le niveau de traitement du produit.  - `productFormat`: Une chaîne de texte obligatoire utilisée pour déclarer le format du produit.  - `productID`: Une chaîne de texte obligatoire utilisée pour déclarer l'ID unique du produit.  - `productType`: Une chaîne de texte obligatoire utilisée pour déclarer le type de produit.  - `productURL`: Une url obligatoire utilisée pour déclarer le lien de téléchargement du produit.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `sensingDate`: L'heure à laquelle l'image a été prise par le capteur.  - `sensingStartedAt`: L'heure de l'acquisition à bord du satellite de la première ligne de l'image dans le produit  - `sensingStoppedAt`: L'heure de l'acquisition à bord du satellite de la dernière ligne de l'image dans le produit  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `timeliness`: L'actualité du produit  - `type`: Type d'entité NGSI-LD. Il doit être égal à EOProduct.    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `cloudCoverage`: Le pourcentage de couverture nuageuse. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `hostedOn`: L'ID du centre de données sur lequel le produit est hébergé.  - `id`: Identifiant unique de l'entité  - `ingestionDate`: La date à laquelle les données ont été mises à disposition dans les archives en ligne.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `observedBy`: L'ID de l'instrument par lequel le produit a été observé  - `orbitDirection`: L'orientation du passage de l'orbite  - `orbitNumber`: Le numéro d'orbite du passage du satellite. Toutes les unités sont acceptées en code [CEFACT](https://www.unece.org/cefact.html).  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `processingLevel`: Une chaîne de texte obligatoire utilisée pour déclarer le niveau de traitement du produit.  - `productFormat`: Une chaîne de texte obligatoire utilisée pour déclarer le format du produit.  - `productID`: Une chaîne de texte obligatoire utilisée pour déclarer l'ID unique du produit.  - `productType`: Une chaîne de texte obligatoire utilisée pour déclarer le type de produit.  - `productURL`: Une url obligatoire utilisée pour déclarer le lien de téléchargement du produit.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `sensingDate`: L'heure à laquelle l'image a été prise par le capteur.  - `sensingStartedAt`: L'heure de l'acquisition à bord du satellite de la première ligne de l'image dans le produit  - `sensingStoppedAt`: L'heure de l'acquisition à bord du satellite de la dernière ligne de l'image dans le produit  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `timeliness`: L'actualité du produit  - `type`: Type d'entité NGSI-LD. Il doit être égal à EOProduct.    
 Propriétés requises  
 - `id`  - `location`  - `productFormat`  - `productID`  - `productURL`  - `sensingDate`  - `type`  ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -36,41 +36,56 @@ EOProduct:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     cloudCoverage:    
       description: 'The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
         units: percent    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     hostedOn:    
       description: 'The ID of the data hub that the product is hosted on'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     id:    
       anyOf: &eoproduct_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -82,13 +97,15 @@ EOProduct:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     ingestionDate:    
       description: 'The time at which the data was made available in the online archive'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Time    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -240,58 +257,72 @@ EOProduct:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     observedBy:    
       description: 'The ID of the instrument that the product was observed by'    
       format: uri    
-      type: Relationship    
+      type: string    
+      x-ngsi:    
+        type: Relationship    
     orbitDirection:    
       description: 'The orbit pass orientation'    
       enum:    
         - Ascending    
         - Descending    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     orbitNumber:    
       description: 'The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *eoproduct_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     processingLevel:    
       description: 'A mandatory text string used to declare the processing level of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     productFormat:    
       description: 'A mandatory text string used to declare the format of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     productID:    
       description: 'A mandatory text string used to declare the unique ID of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     productType:    
       description: 'A mandatory text string used to declare the type of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     productURL:    
       description: 'A mandatory url used to declare the downlaod link of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/url    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -302,38 +333,47 @@ EOProduct:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     sensingDate:    
       description: 'The time at which the image was taken by the sensor'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Time    
+        type: Property    
     sensingStartedAt:    
       description: 'The time of the satellite on-board acquisition of the first line of the image in the product'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Time    
+        type: Property    
     sensingStoppedAt:    
       description: 'The time of the satellite on-board acquisition of the last line of the image in the product'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Time    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     timeliness:    
       description: 'The timeliness of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     type:    
       description: 'NGSI-LD Entity Type. It must be equal to EOProduct.'    
       enum:    
         - EOProduct    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
