@@ -387,7 +387,7 @@ EOProduct:
 </details>    
 ## ペイロードの例  
 #### EOProduct NGSI-v2 key-values の例。  
-EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
