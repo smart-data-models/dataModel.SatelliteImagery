@@ -387,7 +387,7 @@ EOProduct:
 </details>    
 ## Beispiel-Nutzlasten  
 #### EOProdukt NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für ein EOProdukt im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein EOProdukt im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
