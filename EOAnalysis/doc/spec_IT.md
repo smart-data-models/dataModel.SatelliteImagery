@@ -404,47 +404,6 @@ EOAnalysis:
 ```  
 #### EOAnalysis NGSI-LD key-values Esempio  
 Ecco un esempio di una EOAnalysis in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-```json  
-{  
-  "id": "EOAnalysis:02",  
-  "type": "EOAnalysis",  
-  "analyzedAt": "2020-12-24T12:00:00Z",  
-  "provider": "aqua3S/CERTH",  
-  "resultDescription": "The detected oil covers 1000 square meters",  
-  "analysisType": "Flood Detection",  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          23.48993,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.415  
-        ]  
-      ]  
-    ]  
-  },  
-  "isAnalysisOf": "urn:ngsi-ld:EOProduct:123",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
-}  
-```  
 #### EOAnalisi NGSI-LD normalizzata Esempio  
 Ecco un esempio di una EOAnalysis in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
