@@ -506,7 +506,7 @@ EOProduct:
 }  
 ```  
 #### EOProduit NGSI-LD valeurs-clés Exemple  
-Voici un exemple d'un EOProduct au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un EOProduct au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et retourne les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
