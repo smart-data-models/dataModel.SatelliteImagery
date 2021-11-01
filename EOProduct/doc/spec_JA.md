@@ -6,7 +6,7 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `cloudCoverage`: 雲量の割合を表す。単位はすべて[CEFACT](https://www.unece.org/cefact.html)のコードで受け付けます。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hostedOn`: 製品が搭載されているデータハブのID  - `id`: エンティティのユニークな識別子  - `ingestionDate`: オンライン・アーカイブでデータが公開された時刻  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedBy`: 製品が観測された機器のID  - `orbitDirection`: 軌道上のパスの向き  - `orbitNumber`: tha衛星パスの軌道番号。単位はすべて[CEFACT](https://www.unece.org/cefact.html)コードで受け付けます。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `processingLevel`: 製品の処理レベルを宣言するための必須テキスト文字列  - `productFormat`: 製品のフォーマットを宣言するための必須テキスト文字列  - `productID`: 製品のユニークなIDを宣言するための必須テキスト文字列  - `productType`: 製品のタイプを宣言するために使用される必須のテキスト文字列  - `productURL`: 製品のダウンロードリンクを指定するための必須のURLです。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sensingDate`: センサーで画像が撮影された時間  - `sensingStartedAt`: 本製品の画像の1行目を衛星がオンボードで取得した時刻  - `sensingStoppedAt`: プロダクト内の画像の最終ラインの衛星搭載時の取得時刻  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeliness`: 製品の適時性について  - `type`: NGSI-LD エンティティタイプ。EOProductと同じでなければなりません。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `cloudCoverage`: 雲量の割合を表します。単位はすべて[CEFACT](https://www.unece.org/cefact.html)のコードで受け付けます。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hostedOn`: 製品が搭載されているデータハブのID  - `id`: エンティティのユニークな識別子  - `ingestionDate`: オンライン・アーカイブでデータが公開された時刻  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedBy`: 製品が観測された機器のID  - `orbitDirection`: 軌道上のパスの向き  - `orbitNumber`: tha衛星パスの軌道番号。単位はすべて[CEFACT](https://www.unece.org/cefact.html)コードで受け付けます。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `processingLevel`: 製品の処理レベルを宣言するための必須テキスト文字列  - `productFormat`: 製品のフォーマットを宣言するための必須テキスト文字列  - `productID`: 製品のユニークなIDを宣言するための必須テキスト文字列  - `productType`: 製品のタイプを宣言するために使用される必須のテキスト文字列  - `productURL`: 製品のダウンロードリンクを指定するための必須のURLです。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sensingDate`: センサーで画像が撮影された時間  - `sensingStartedAt`: 本製品の画像の1行目を衛星がオンボードで取得した時刻  - `sensingStoppedAt`: プロダクト内の画像の最終ラインの衛星搭載時の取得時刻  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeliness`: 製品の適時性について  - `type`: NGSI-LD エンティティタイプ。EOProductと同じでなければなりません。    
 必須項目  
 - `id`  - `location`  - `productFormat`  - `productID`  - `productURL`  - `sensingDate`  - `type`  ## データモデルによるプロパティの記述  
 アルファベット順（クリックすると詳細が表示されます  
@@ -387,7 +387,7 @@ EOProduct:
 </details>    
 ## ペイロードの例  
 #### EOProduct NGSI-v2 key-values の例。  
-EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
