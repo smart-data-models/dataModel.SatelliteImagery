@@ -25,6 +25,7 @@
         "localServerPath": "https://smartdatamodels.org/dataModel.SatelliteImagery/localServerPath",
         "location": "ngsi-ld:location",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedBy": "https://smartdatamodels.org/dataModel.SatelliteImagery/observedBy",
         "operationalMode": "https://smartdatamodels.org/dataModel.SatelliteImagery/operationalMode",
         "orbitDirection": "https://smartdatamodels.org/dataModel.SatelliteImagery/orbitDirection",
