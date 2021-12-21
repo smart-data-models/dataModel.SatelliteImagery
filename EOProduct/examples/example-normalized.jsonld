@@ -1,100 +1,98 @@
 {
-  "id": "urn:ngsi-ld:EOProduct:123",
-  "type": "EOProduct",
-  "createdAt": "2020-03-13T15:42:00Z",
-  "modifiedAt": "2020-03-13T15:45:00Z",
-  "productID": {
-    "type": "Property",
-    "value": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29"
-  },
-  "productURL": {
-    "type": "Property",
-    "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value"
-  },
-  "productType": {
-    "type": "Property",
-    "value": "GRD"
-  },
-  "processingLevel": {
-    "type": "Property",
-    "value": "L1"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            25.4464,
-            41.887688
-          ],
-          [
-            25.855984,
-            43.386223
-          ],
-          [
-            22.690121,
-            43.786907
-          ],
-          [
-            22.356091,
-            42.288685
-          ],
-          [
-            25.4464,
-            41.887688
-          ]
-        ]
-      ]
-    }
-  },
-  "productFormat": {
-    "type": "Property",
-    "value": "SAFE"
-  },
-  "cloudCoverage": {
-    "type": "Property",
-    "value": 19.125499,
-    "unitCode": "P1"
-  },
-  "orbitDirection": {
-    "type": "Property",
-    "value": "Descending"
-  },
-  "orbitNumber": {
-    "type": "Property",
-    "value": 93
-  },
-  "ingestionDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-01-18T18:29:16.884Z"
-    }
-  },
-  "sensingDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-01-18T09:23:21.024Z"
-    }
-  },
-  "sensingStartedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-01-18T09:23:21.024Z"
-    }
-  },
-  "sensingStoppedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-01-18T09:23:21.024Z"
-    }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:EOProduct:123",
+    "type": "EOProduct",
+    "cloudCoverage": {
+        "type": "Property",
+        "value": 19.125499,
+        "unitCode": "P1"
+    },
+    "createdAt": "2020-03-13T15:42:00Z",
+    "ingestionDate": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2021-01-18T18:29:16.884Z"
+        }
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        25.4464,
+                        41.887688
+                    ],
+                    [
+                        25.855984,
+                        43.386223
+                    ],
+                    [
+                        22.690121,
+                        43.786907
+                    ],
+                    [
+                        22.356091,
+                        42.288685
+                    ],
+                    [
+                        25.4464,
+                        41.887688
+                    ]
+                ]
+            ]
+        }
+    },
+    "modifiedAt": "2020-03-13T15:45:00Z",
+    "orbitDirection": {
+        "type": "Property",
+        "value": "Descending"
+    },
+    "orbitNumber": {
+        "type": "Property",
+        "value": 93
+    },
+    "processingLevel": {
+        "type": "Property",
+        "value": "L1"
+    },
+    "productFormat": {
+        "type": "Property",
+        "value": "SAFE"
+    },
+    "productID": {
+        "type": "Property",
+        "value": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29"
+    },
+    "productType": {
+        "type": "Property",
+        "value": "GRD"
+    },
+    "productURL": {
+        "type": "Property",
+        "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value"
+    },
+    "sensingDate": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2021-01-18T09:23:21.024Z"
+        }
+    },
+    "sensingStartedAt": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2021-01-18T09:23:21.024Z"
+        }
+    },
+    "sensingStoppedAt": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2021-01-18T09:23:21.024Z"
+        }
+    },
+    "@context": []
 }
