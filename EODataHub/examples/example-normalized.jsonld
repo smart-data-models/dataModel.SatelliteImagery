@@ -1,17 +1,15 @@
 {
-  "id": "urn:ngsi-ld:EODataHub:123",
-  "type": "EODataHub",
-  "createdAt": "2020-03-13T15:42:00Z",
-  "modifiedAt": "2020-03-13T15:45:00Z",
-  "dataHubName": {
-    "type": "Property",
-    "value": "ESA Copernicus Open Access Hub"
-  },
-  "dataHubURL": {
-    "type": "url",
-    "value": "http://scihub.copernicus.eu"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:EODataHub:123",
+    "type": "EODataHub",
+    "createdAt": "2020-03-13T15:42:00Z",
+    "dataHubName": {
+        "type": "Property",
+        "value": "ESA Copernicus Open Access Hub"
+    },
+    "dataHubURL": {
+        "type": "url",
+        "value": "http://scihub.copernicus.eu"
+    },
+    "modifiedAt": "2020-03-13T15:45:00Z",
+    "@context": []
 }
