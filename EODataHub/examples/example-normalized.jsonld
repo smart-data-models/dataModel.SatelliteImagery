@@ -11,5 +11,7 @@
         "value": "http://scihub.copernicus.eu"
     },
     "modifiedAt": "2020-03-13T15:45:00Z",
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+    ]
 }
