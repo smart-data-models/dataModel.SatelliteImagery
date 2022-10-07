@@ -15,5 +15,7 @@
         "type": "Property",
         "value": "Sentinel-1"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+    ]
 }
