@@ -94,5 +94,7 @@
             "@value": "2021-01-18T09:23:21.024Z"
         }
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+    ]
 }
