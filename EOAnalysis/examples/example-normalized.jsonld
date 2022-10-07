@@ -56,5 +56,7 @@
         "type": "Property",
         "value": "The detected flooded areas cover 1000 square meters"
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+    ]
 }
