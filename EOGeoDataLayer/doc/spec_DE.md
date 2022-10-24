@@ -1,15 +1,31 @@
-Entität: EOGeoDataLayer  
-=======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: EOGeoDataLayer  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Diese Entität enthält eine harmonisierte Beschreibung eines generischen EOGeoDataLayers für den Bereich der Satellitenbilder. Diese Entität ist in erster Linie mit den Ausgabedatenschichten im Zusammenhang mit Erdbeobachtungsanalyseanwendungen verbunden.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `contentInformation`: Ein Array, das für jede Schicht (z. B. band1) oder jeden Entitätsnamen die Art der Information (z. B. kategorisch, numerisch) und ein Array mit der Erklärung der dargestellten Werte (z. B. [1:Öl, 0:kein Öl]) beschreibt  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `geoMetadata`: Eine Textzeichenfolge, die zur Angabe der Metadaten-Datei verwendet wird, falls vorhanden  - `id`: Eindeutiger Bezeichner der Entität  - `isOutputOf`: Die ID der Analyse, die zur Extraktion dieser Datenschicht durchgeführt wurde  - `localServerPath`: Eine obligatorische Zeichenfolge zur Angabe des Pfads, unter dem die Ausgabedatenschicht auf dem Server gespeichert wird  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `storageFormat`: Das Satorage-Format der Entität.  - `type`: NGSI-LD-Entitätstyp. Er muss gleich EOGeoDataLayer sein.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `contentInformation[array]`: Ein Array, das für jeden Layer (z. B. band1) oder Entitätsnamen die Art der Information (z. B. kategorisch, numerisch) und ein Array mit der Erklärung der dargestellten Werte (z. B. [1:Öl, 0:kein Öl]) beschreibt  - `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `geoMetadata[string]`: Eine Textzeichenfolge, die zur Angabe der Metadaten-Datei verwendet wird, falls vorhanden  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `isOutputOf[string]`: Die ID der Analyse, die zur Extraktion dieser Datenschicht durchgeführt wurde  - `localServerPath[string]`: Eine obligatorische Zeichenfolge zur Angabe des Pfads, unter dem die Ausgabedatenschicht auf dem Server gespeichert wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `storageFormat[string]`: Das Satorage-Format der Entität.  - `type[string]`: NGSI-LD-Entitätstyp. Er muss gleich EOGeoDataLayer sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `localServerPath`  - `storageFormat`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `localServerPath`  - `storageFormat`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOGeoDataLayer:    
@@ -324,11 +340,22 @@ EOGeoDataLayer:
     - localServerPath    
     - storageFormat    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md    
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOGeoDataLayer/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### EOGeoDataLayer NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen EOGeoDataLayer im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
@@ -358,8 +385,10 @@ EOGeoDataLayer:
   "isOutputOf": "EOAnalysis:02"  
 }  
 ```  
+</details>  
 #### EOGeoDataLayer NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen EOGeoDataLayer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
@@ -424,128 +453,140 @@ EOGeoDataLayer:
   }  
 }  
 ```  
+</details>  
 #### EOGeoDataLayer NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen EOGeoDataLayer im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
-  "type": "EOGeoDataLayer",  
-  "localServerPath": "/data/www/oil_map.tif",  
-  "storageFormat": "GeoTIFF",  
-  "geoMetadata": "/data/www/metadata_oil.xml",  
-  "contentInformation": [  
-    {  
-      "layer_name": "band1",  
-      "layer_categorization": "categorical",  
-      "values_explanation": [  
-        "1:oil",  
-        "0:water"  
-      ]  
-    }  
-  ],  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          23.48993,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.415  
+    "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
+    "type": "EOGeoDataLayer",  
+    "contentInformation": [  
+        {  
+            "layer_name": "band1",  
+            "layer_categorization": "categorical",  
+            "values_explanation": [  
+                "1:oil",  
+                "0:water"  
+            ]  
+        }  
+    ],  
+    "geoMetadata": "/data/www/metadata_oil.xml",  
+    "isOutputOf": "EOAnalysis:02",  
+    "localServerPath": "/data/www/oil_map.tif",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    23.48993,  
+                    42.415  
+                ],  
+                [  
+                    23.66274,  
+                    42.415  
+                ],  
+                [  
+                    23.66274,  
+                    42.53524  
+                ],  
+                [  
+                    23.48993,  
+                    42.53524  
+                ],  
+                [  
+                    23.48993,  
+                    42.415  
+                ]  
+            ]  
         ]  
-      ]  
+    },  
+    "storageFormat": "GeoTIFF",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
     ]  
-  },  
-  "isOutputOf": "EOAnalysis:02",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### EOGeoDataLayer NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen EOGeoDataLayer im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
-  "type": "EOGeoDataLayer",  
-  "createdAt": "2020-03-13T15:42:00Z",  
-  "modifiedAt": "2020-03-13T15:45:00Z",  
-  "isOutputOf": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:EOAnalysis:02"  
-  },  
-  "localServerPath": {  
-    "type": "Property",  
-    "value": "/data/www/water_mask.tif"  
-  },  
-  "storageFormat": {  
-    "type": "Property",  
-    "value": "GeoTIFF"  
-  },  
-  "geoMetadata": {  
-    "type": "Property",  
-    "value": "/data/www/metadata.xml"  
-  },  
-  "contentInformation": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "layer_name": "band1",  
-        "layer_categorization": "categorical",  
-        "values_explanation": [  
-          "1:inundated",  
-          "0:non inundated"  
+    "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
+    "type": "EOGeoDataLayer",  
+    "contentInformation": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "layer_name": "band1",  
+                "layer_categorization": "categorical",  
+                "values_explanation": [  
+                    "1:inundated",  
+                    "0:non inundated"  
+                ]  
+            }  
         ]  
-      }  
+    },  
+    "createdAt": "2020-03-13T15:42:00Z",  
+    "geoMetadata": {  
+        "type": "Property",  
+        "value": "/data/www/metadata.xml"  
+    },  
+    "isOutputOf": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:EOAnalysis:02"  
+    },  
+    "localServerPath": {  
+        "type": "Property",  
+        "value": "/data/www/water_mask.tif"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Polygon",  
+            "coordinates": [  
+                [  
+                    [  
+                        23.6627,  
+                        41.88768  
+                    ],  
+                    [  
+                        25.85598,  
+                        43.38622  
+                    ],  
+                    [  
+                        23.4899,  
+                        43.78691  
+                    ],  
+                    [  
+                        22.35609,  
+                        42.28869  
+                    ],  
+                    [  
+                        23.6627,  
+                        41.88769  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "modifiedAt": "2020-03-13T15:45:00Z",  
+    "storageFormat": {  
+        "type": "Property",  
+        "value": "GeoTIFF"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
     ]  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Polygon",  
-      "coordinates": [  
-        [  
-          [  
-            23.6627,  
-            41.88768  
-          ],  
-          [  
-            25.85598,  
-            43.38622  
-          ],  
-          [  
-            23.4899,  
-            43.78691  
-          ],  
-          [  
-            22.35609,  
-            42.28869  
-          ],  
-          [  
-            23.6627,  
-            41.88769  
-          ]  
-        ]  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
