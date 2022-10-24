@@ -1,15 +1,31 @@
-Entité : EOInstrument  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : EOInstrument  
+=====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOInstrument/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'un instrument d'observation de la Terre générique conçu pour le domaine de l'imagerie satellitaire. Cette entité est principalement associée aux instruments satellitaires liés aux applications d'analyse de l'observation de la Terre**.  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `alternateName`: Un nom alternatif pour cet élément  - `carriedOn`: L'ID de la plateforme satellitaire sur laquelle l'instrument est transporté.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `instrumentID`: Une chaîne de texte obligatoire utilisée pour déclarer l'ID de la charge utile de l'instrument.  - `instrumentName`: Une chaîne de texte obligatoire utilisée pour déclarer le nom de la charge utile de l'instrument.  - `name`: Le nom de cet élément.  - `operationalMode`: Une chaîne de texte utilisée pour déclarer les modes de capteur pris en charge, s'ils sont disponibles.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `polarizationMode`: Une chaîne de texte utilisée pour déclarer les modes de polarisation, s'ils sont disponibles.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `swathID`: Une chaîne de texte utilisée pour déclarer l'ID de l'andain, si disponible.  - `type`: Type d'entité NGSI-LD. Il doit être égal à EOInstrument.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `alternateName[string]`: Un nom alternatif pour cet élément  - `carriedOn[string]`: L'ID de la plateforme satellitaire sur laquelle l'instrument est transporté.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `instrumentID[string]`: Une chaîne de texte obligatoire utilisée pour déclarer l'ID de la charge utile de l'instrument.  . Model: [https://schema.org/Text](https://schema.org/Text)- `instrumentName[string]`: Une chaîne de texte obligatoire utilisée pour déclarer le nom de la charge utile de l'instrument.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Le nom de cet élément.  - `operationalMode[string]`: Une chaîne de texte utilisée pour déclarer les modes de capteur pris en charge, s'ils sont disponibles.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `polarizationMode[string]`: Une chaîne de texte utilisée pour déclarer les modes de polarisation, s'ils sont disponibles.  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `swathID[string]`: Une chaîne de texte utilisée pour déclarer l'ID de l'andain, si disponible.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI-LD. Il doit être égal à EOInstrument.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`  ## Description des propriétés du modèle de données  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOInstrument:    
@@ -132,11 +148,22 @@ EOInstrument:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOInstrument/LICENSE.md    
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOInstrument/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### EOInstrument NGSI-v2 valeurs-clés Exemple  
 Voici un exemple d'un EOInstrument au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOInstrument:154",  
@@ -149,8 +176,10 @@ EOInstrument:
   "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"  
 }  
 ```  
+</details>  
 #### EOInstrument NGSI-v2 normalisé Exemple  
 Voici un exemple d'un EOInstrument au format JSON-LD tel que normalisé. Ceci est compatible avec la NGSI-v2 lorsqu'elle n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOInstrument:154",  
@@ -175,56 +204,68 @@ EOInstrument:
   }  
 }  
 ```  
+</details>  
 #### EOInstrument NGSI-LD valeurs-clés Exemple  
 Voici un exemple d'un EOInstrument au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOInstrument:154",  
-  "type": "EOInstrument",  
-  "instrumentID": "MSI",  
-  "instrumentName": "Multi-Spectral Instrument",  
-  "swathID": "S2",  
-  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:EOInstrument:154",  
+    "type": "EOInstrument",  
+    "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",  
+    "instrumentID": "MSI",  
+    "instrumentName": "Multi-Spectral Instrument",  
+    "swathID": "S2",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### EOInstrument NGSI-LD normalisé Exemple  
 Voici un exemple d'un EOInstrument au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOInstrument:154",  
-  "type": "EOInstrument",  
-  "createdAt": "2020-03-13T15:42:00Z",  
-  "modifiedAt": "2020-03-13T15:45:00Z",  
-  "carriedOn": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:EOSatellitePlatform:154"  
-  },  
-  "instrumentID": {  
-    "type": "Property",  
-    "value": "SAR-C"  
-  },  
-  "instrumentName": {  
-    "type": "Property",  
-    "value": "Synthetic Aperture Radar (C-band)"  
-  },  
-  "operationalMode": {  
-    "type": "Property",  
-    "value": "IW"  
-  },  
-  "polarizaionMode": {  
-    "type": "Property",  
-    "value": "VV + VH"  
-  },  
-  "swathID": {  
-    "type": "Property",  
-    "value": "S1"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:EOInstrument:154",  
+    "type": "EOInstrument",  
+    "carriedOn": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:EOSatellitePlatform:154"  
+    },  
+    "createdAt": "2020-03-13T15:42:00Z",  
+    "instrumentID": {  
+        "type": "Property",  
+        "value": "SAR-C"  
+    },  
+    "instrumentName": {  
+        "type": "Property",  
+        "value": "Synthetic Aperture Radar (C-band)"  
+    },  
+    "modifiedAt": "2020-03-13T15:45:00Z",  
+    "operationalMode": {  
+        "type": "Property",  
+        "value": "IW"  
+    },  
+    "polarizaionMode": {  
+        "type": "Property",  
+        "value": "VV + VH"  
+    },  
+    "swathID": {  
+        "type": "Property",  
+        "value": "S1"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
+    ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
