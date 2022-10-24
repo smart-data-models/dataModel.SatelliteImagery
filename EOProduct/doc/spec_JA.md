@@ -1,15 +1,31 @@
-エンティティEOProduct  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティEOProduct  
+===============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOProduct/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティには、衛星画像処理ドメイン用に作られた汎用EOProductの調和された記述が含まれています。このエンティティは、主に地球観測分析アプリケーションに関連する衛星製品に関連しています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、Satellite Imagerry ドメインのために作られた汎用 EOProduct の調和された記述 を含んでいる。このエンティティは、主に地球観測解析アプリケーションに関連する衛星プロダクトと関連している。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `cloudCoverage`: 雲量の割合を表します。単位はすべて[CEFACT](https://www.unece.org/cefact.html)のコードで受け付けます。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `hostedOn`: 製品が搭載されているデータハブのID  - `id`: エンティティのユニークな識別子  - `ingestionDate`: オンライン・アーカイブでデータが公開された時刻  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedBy`: 製品が観測された機器のID  - `orbitDirection`: 軌道上のパスの向き  - `orbitNumber`: tha衛星パスの軌道番号。単位はすべて[CEFACT](https://www.unece.org/cefact.html)コードで受け付けます。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `processingLevel`: 製品の処理レベルを宣言するための必須テキスト文字列  - `productFormat`: 製品のフォーマットを宣言するための必須テキスト文字列  - `productID`: 製品のユニークなIDを宣言するための必須テキスト文字列  - `productType`: 製品のタイプを宣言するために使用される必須のテキスト文字列  - `productURL`: 製品のダウンロードリンクを指定するための必須のURLです。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `sensingDate`: センサーで画像が撮影された時間  - `sensingStartedAt`: 本製品の画像の1行目を衛星がオンボードで取得した時刻  - `sensingStoppedAt`: プロダクト内の画像の最終ラインの衛星搭載時の取得時刻  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeliness`: 製品の適時性について  - `type`: NGSI-LD エンティティタイプ。EOProductと同じでなければなりません。    
-必須項目  
-- `id`  - `location`  - `productFormat`  - `productID`  - `productURL`  - `sensingDate`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudCoverage[number]`: 雲量率。単位はすべて[CEFACT](https://www.unece.org/cefact.html)コードで受け付けます。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hostedOn[string]`: 製品がホストされているデータハブのID  - `id[*]`: エンティティの一意な識別子  - `ingestionDate[string]`: オンラインアーカイブでデータが公開された時期  . Model: [https://schema.org/Time](https://schema.org/Time)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `observedBy[string]`: 製品が観測された機器のID  - `orbitDirection[string]`: オービットパスの方向  . Model: [https://schema.org/Text](https://schema.org/Text)- `orbitNumber[number]`: 衛星パスの軌道番号。単位はすべて[CEFACT](https://www.unece.org/cefact.html)コードで受け付けます。  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `processingLevel[string]`: 製品の処理レベルを宣言するために使用される必須のテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `productFormat[string]`: 製品のフォーマットを宣言するために使用される必須のテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `productID[string]`: 製品のユニークなIDを宣言するために使用される必須のテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `productType[string]`: 製品の種類を宣言するために使用される必須のテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `productURL[string]`: 製品のダウンロードリンクを宣言するために使用される必須のURLです。  . Model: [https://schema.org/url](https://schema.org/url)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `sensingDate[string]`: センサーが画像を撮影した時間  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStartedAt[string]`: プロダクト内の画像の1行目を衛星搭載機が取得した時刻  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStoppedAt[string]`: プロダクト内の画像の最終行の衛星搭載撮影時刻  . Model: [https://schema.org/Time](https://schema.org/Time)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `timeliness[string]`: 製品のタイムリーさ  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-LD エンティティタイプ。EOProduct と同じでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `location`  - `productFormat`  - `productID`  - `productURL`  - `sensingDate`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOProduct:    
@@ -383,11 +399,22 @@ EOProduct:
     - productFormat    
     - sensingDate    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOProduct/LICENSE.md    
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOProduct/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### EOProduct NGSI-v2 key-values の例。  
-EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### EOProduct NGSI-v2 key-value の例。  
+ここでは、EOProductをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
@@ -420,8 +447,10 @@ EOProduct:
   "observedBy": "urn:ngsi-ld:EOInstrument:154"  
 }  
 ```  
+</details>  
 #### EOProduct NGSI-v2 正規化例  
-JSON-LD形式のEOProductを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+EOProduct を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOProduct:123",  
@@ -505,160 +534,172 @@ EOProduct:
   }  
 }  
 ```  
-#### EOProduct NGSI-LD key-values の例。  
-EOProductをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOProduct NGSI-LD key-value 例  
+ここでは、EOProductをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOProduct:123",  
-  "type": "EOProduct",  
-  "productID": "S2A_MSIL2A_20210118T092321_N0214_R093_T34TGN_20210118T120704",  
-  "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('698c2089-704f-4d4f-aa2f-977902e2d35e')/$value",  
-  "productType": "S2MSI2A",  
-  "processingLevel": "Level-2A",  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          24.7578584453215,  
-          42.3024516155518  
-        ],  
-        [  
-          24.8181237036864,  
-          43.2890817991595  
-        ],  
-        [  
-          23.4662891411315,  
-          43.3262569717781  
-        ],  
-        [  
-          23.4272955487519,  
-          42.3383721018908  
-        ],  
-        [  
-          24.7578584453215,  
-          42.3024516155518  
+    "id": "urn:ngsi-ld:EOProduct:123",  
+    "type": "EOProduct",  
+    "cloudCoverage": 19.125499,  
+    "hostedOn": "urn:ngsi-ld:EODataHub:123",  
+    "ingestionDate": "2021-01-18T18:29:16.884Z",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    24.7578584453215,  
+                    42.3024516155518  
+                ],  
+                [  
+                    24.8181237036864,  
+                    43.2890817991595  
+                ],  
+                [  
+                    23.4662891411315,  
+                    43.3262569717781  
+                ],  
+                [  
+                    23.4272955487519,  
+                    42.3383721018908  
+                ],  
+                [  
+                    24.7578584453215,  
+                    42.3024516155518  
+                ]  
+            ]  
         ]  
-      ]  
+    },  
+    "observedBy": "urn:ngsi-ld:EOInstrument:154",  
+    "orbitDirection": "Descending",  
+    "orbitNumber": 93,  
+    "processingLevel": "Level-2A",  
+    "productFormat": "SAFE",  
+    "productID": "S2A_MSIL2A_20210118T092321_N0214_R093_T34TGN_20210118T120704",  
+    "productType": "S2MSI2A",  
+    "productURL": "https://scihub.copernicus.eu/dhus/odata/v1/Products('698c2089-704f-4d4f-aa2f-977902e2d35e')/$value",  
+    "sensingDate": "2021-01-18T09:23:21.024Z",  
+    "sensingStartedAt": "2021-01-18T09:23:21.024Z",  
+    "sensingStoppedAt": "2021-01-18T09:23:21.024Z",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
     ]  
-  },  
-  "productFormat": "SAFE",  
-  "cloudCoverage": 19.125499,  
-  "orbitDirection": "Descending",  
-  "orbitNumber": 93,  
-  "ingestionDate": "2021-01-18T18:29:16.884Z",  
-  "sensingDate": "2021-01-18T09:23:21.024Z",  
-  "sensingStartedAt": "2021-01-18T09:23:21.024Z",  
-  "sensingStoppedAt": "2021-01-18T09:23:21.024Z",  
-  "hostedOn": "urn:ngsi-ld:EODataHub:123",  
-  "observedBy": "urn:ngsi-ld:EOInstrument:154",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### EOProduct NGSI-LDの正規化例  
-JSON-LD形式のEOProductを正規化した例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOProduct NGSI-LD 正規化例  
+EOProduct を JSON-LD 形式で正規化した例を示します。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOProduct:123",  
-  "type": "EOProduct",  
-  "createdAt": "2020-03-13T15:42:00Z",  
-  "modifiedAt": "2020-03-13T15:45:00Z",  
-  "productID": {  
-    "type": "Property",  
-    "value": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29"  
-  },  
-  "productURL": {  
-    "type": "Property",  
-    "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value"  
-  },  
-  "productType": {  
-    "type": "Property",  
-    "value": "GRD"  
-  },  
-  "processingLevel": {  
-    "type": "Property",  
-    "value": "L1"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Polygon",  
-      "coordinates": [  
-        [  
-          [  
-            25.4464,  
-            41.887688  
-          ],  
-          [  
-            25.855984,  
-            43.386223  
-          ],  
-          [  
-            22.690121,  
-            43.786907  
-          ],  
-          [  
-            22.356091,  
-            42.288685  
-          ],  
-          [  
-            25.4464,  
-            41.887688  
-          ]  
-        ]  
-      ]  
-    }  
-  },  
-  "productFormat": {  
-    "type": "Property",  
-    "value": "SAFE"  
-  },  
-  "cloudCoverage": {  
-    "type": "Property",  
-    "value": 19.125499,  
-    "unitCode": "P1"  
-  },  
-  "orbitDirection": {  
-    "type": "Property",  
-    "value": "Descending"  
-  },  
-  "orbitNumber": {  
-    "type": "Property",  
-    "value": 93  
-  },  
-  "ingestionDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-18T18:29:16.884Z"  
-    }  
-  },  
-  "sensingDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-18T09:23:21.024Z"  
-    }  
-  },  
-  "sensingStartedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-18T09:23:21.024Z"  
-    }  
-  },  
-  "sensingStoppedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-18T09:23:21.024Z"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:EOProduct:123",  
+    "type": "EOProduct",  
+    "cloudCoverage": {  
+        "type": "Property",  
+        "value": 19.125499,  
+        "unitCode": "P1"  
+    },  
+    "createdAt": "2020-03-13T15:42:00Z",  
+    "ingestionDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-18T18:29:16.884Z"  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Polygon",  
+            "coordinates": [  
+                [  
+                    [  
+                        25.4464,  
+                        41.887688  
+                    ],  
+                    [  
+                        25.855984,  
+                        43.386223  
+                    ],  
+                    [  
+                        22.690121,  
+                        43.786907  
+                    ],  
+                    [  
+                        22.356091,  
+                        42.288685  
+                    ],  
+                    [  
+                        25.4464,  
+                        41.887688  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "modifiedAt": "2020-03-13T15:45:00Z",  
+    "orbitDirection": {  
+        "type": "Property",  
+        "value": "Descending"  
+    },  
+    "orbitNumber": {  
+        "type": "Property",  
+        "value": 93  
+    },  
+    "processingLevel": {  
+        "type": "Property",  
+        "value": "L1"  
+    },  
+    "productFormat": {  
+        "type": "Property",  
+        "value": "SAFE"  
+    },  
+    "productID": {  
+        "type": "Property",  
+        "value": "S1B_IW_GRDH_1SDV_20210201T042950_20210201T043015_025408_0306B8_AE29"  
+    },  
+    "productType": {  
+        "type": "Property",  
+        "value": "GRD"  
+    },  
+    "productURL": {  
+        "type": "Property",  
+        "value": "https://scihub.copernicus.eu/dhus/odata/v1/Products('561d85c3-5627-4f78-84f7-05d0a0c8db9c')/$value"  
+    },  
+    "sensingDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-18T09:23:21.024Z"  
+        }  
+    },  
+    "sensingStartedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-18T09:23:21.024Z"  
+        }  
+    },  
+    "sensingStoppedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-18T09:23:21.024Z"  
+        }  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
