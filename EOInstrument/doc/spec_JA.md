@@ -1,15 +1,31 @@
-エンティティEOインストゥルメント  
-=================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティEOInstrument  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOInstrument/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、衛星画像処理ドメイン用に作られた汎用EOInstrumentの調和のとれた記述を含んでいます。このエンティティは、主に地球観測解析アプリケーションに関連する衛星機器に関連付けられている。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、Satellite Imagerry ドメインのために作られた汎用 EOInstrument の調和された記述を含んでいる。このエンティティは、主に地球観測解析アプリケーションに関連する衛星機器と関連している。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `alternateName`: このアイテムの別称  - `carriedOn`: 機器が搭載されている衛星プラットフォームのID  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `instrumentID`: 楽器のペイロードのIDを宣言するための必須テキスト文字列  - `instrumentName`: 楽器のペイロードの名前を宣言するための必須テキスト文字列  - `name`: このアイテムの名前です。  - `operationalMode`: サポートされているセンサーモードがあれば、それを宣言するためのテキスト文字列  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `polarizationMode`: 偏光モードがある場合、それを宣言するためのテキスト文字列  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `swathID`: ススワスIDがある場合、それを宣言するためのテキスト文字列  - `type`: NGSI-LD エンティティタイプ。EOInstrumentと同じでなければならない。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `alternateName[string]`: この項目の別称  - `carriedOn[string]`: 観測機器が搭載されている衛星プラットフォームのID  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `instrumentID[string]`: 測定器ペイロードの ID を宣言するために使用される必須のテキスト文字列。  . Model: [https://schema.org/Text](https://schema.org/Text)- `instrumentName[string]`: 測定器ペイロードの名前を宣言するために使用する必須のテキスト文字列。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `operationalMode[string]`: もしあれば、サポートされるセンサーモードを宣言するために使用されるテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `polarizationMode[string]`: 偏光モードがある場合、その宣言に使用されるテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `swathID[string]`: スワス ID がある場合、その宣言に使用されるテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-LD エンティティタイプ。EOInstrument と等しくなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOInstrument:    
@@ -132,11 +148,22 @@ EOInstrument:
     - id    
     - type    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOInstrument/LICENSE.md    
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOInstrument/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### EOInstrument NGSI-v2 key-values 例  
-EOInstrumentをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使うとNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### EOInstrument NGSI-v2 key-value の例  
+ここでは、EOInstrumentをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOInstrument:154",  
@@ -149,8 +176,10 @@ EOInstrument:
   "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154"  
 }  
 ```  
-#### EOInstrument NGSI-v2の正規化例  
-JSON-LD形式のEOInstrumentを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOInstrument NGSI-v2 正規化例  
+EOInstrument を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOInstrument:154",  
@@ -175,56 +204,68 @@ EOInstrument:
   }  
 }  
 ```  
-#### EOInstrument NGSI-LDのキーバリューの例  
-EOInstrumentをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOInstrument NGSI-LD key-value 例  
+ここでは、EOInstrumentをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOInstrument:154",  
-  "type": "EOInstrument",  
-  "instrumentID": "MSI",  
-  "instrumentName": "Multi-Spectral Instrument",  
-  "swathID": "S2",  
-  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:EOInstrument:154",  
+    "type": "EOInstrument",  
+    "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",  
+    "instrumentID": "MSI",  
+    "instrumentName": "Multi-Spectral Instrument",  
+    "swathID": "S2",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### EOInstrument NGSI-LDの正規化例  
-EOInstrumentを正規化したJSON-LD形式の例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOInstrument NGSI-LD 正規化例  
+EOInstrumentをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOInstrument:154",  
-  "type": "EOInstrument",  
-  "createdAt": "2020-03-13T15:42:00Z",  
-  "modifiedAt": "2020-03-13T15:45:00Z",  
-  "carriedOn": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:EOSatellitePlatform:154"  
-  },  
-  "instrumentID": {  
-    "type": "Property",  
-    "value": "SAR-C"  
-  },  
-  "instrumentName": {  
-    "type": "Property",  
-    "value": "Synthetic Aperture Radar (C-band)"  
-  },  
-  "operationalMode": {  
-    "type": "Property",  
-    "value": "IW"  
-  },  
-  "polarizaionMode": {  
-    "type": "Property",  
-    "value": "VV + VH"  
-  },  
-  "swathID": {  
-    "type": "Property",  
-    "value": "S1"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:EOInstrument:154",  
+    "type": "EOInstrument",  
+    "carriedOn": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:EOSatellitePlatform:154"  
+    },  
+    "createdAt": "2020-03-13T15:42:00Z",  
+    "instrumentID": {  
+        "type": "Property",  
+        "value": "SAR-C"  
+    },  
+    "instrumentName": {  
+        "type": "Property",  
+        "value": "Synthetic Aperture Radar (C-band)"  
+    },  
+    "modifiedAt": "2020-03-13T15:45:00Z",  
+    "operationalMode": {  
+        "type": "Property",  
+        "value": "IW"  
+    },  
+    "polarizaionMode": {  
+        "type": "Property",  
+        "value": "VV + VH"  
+    },  
+    "swathID": {  
+        "type": "Property",  
+        "value": "S1"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
