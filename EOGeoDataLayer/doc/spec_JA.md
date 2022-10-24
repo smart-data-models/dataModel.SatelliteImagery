@@ -1,15 +1,31 @@
-Entity:EOGeoDataLayer  
-=====================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティEOGeoDataLayer  
+====================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、衛星画像処理ドメイン用に作成された汎用EOGeoDataLayerの調和された記述を含む。このエンティティは、主に地球観測解析アプリケーションに関連する出力データ層に関連付けられています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、Satellite Imagerry ドメインのために作られた汎用 EOGeoDataLayer の調和された記述を含んでいる。このエンティティは、主に地球観測解析アプリケーションに関連する出力データ層と関連している。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `contentInformation`: 各層（例：band1）またはエンティティ名、情報の種類（例：categorical, numerical）、および描写された値の説明（例：[1:オイル、0:オイルなし]）を記述した配列。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `geoMetadata`: メタデータファイルがある場合、それを宣言するためのテキスト文字列  - `id`: エンティティのユニークな識別子  - `isOutputOf`: このデータレイヤーを抽出するために行われた分析のID  - `localServerPath`: 出力データ層がサーバーに保存されるパスを宣言するための必須テキスト文字列  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `storageFormat`: エンティティのサトラージュ形式。  - `type`: NGSI-LD エンティティタイプ。EOGeoDataLayerと同じでなければならない。    
-必須項目  
-- `id`  - `localServerPath`  - `storageFormat`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `contentInformation[array]`: 各レイヤー（例：band1）やエンティティ名、情報の種類（例：categorical, numerical）、描画値の説明（例：[1：オイル、0：オイルなし]）を記述する配列。  - `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `geoMetadata[string]`: メタデータファイルがある場合、その宣言に使用されるテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `isOutputOf[string]`: このデータレイヤーを抽出するために実行された解析のID  - `localServerPath[string]`: 出力データレイヤーがサーバー上に保存されるパスを宣言するために使用される必須のテキスト文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `storageFormat[string]`: エンタメのサテラジ形式。  - `type[string]`: NGSI-LD エンティティタイプ。EOGeoDataLayer と等しくなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `localServerPath`  - `storageFormat`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOGeoDataLayer:    
@@ -324,11 +340,22 @@ EOGeoDataLayer:
     - localServerPath    
     - storageFormat    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/LICENSE.md    
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOGeoDataLayer/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### EOGeoDataLayer NGSI-v2 key-values の例。  
-EOGeoDataLayerをJSON-LD形式でkey-valuesにした例を紹介します。これはNGSI-v2で`options=keyValues`を使用した場合と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### EOGeoDataLayer NGSI-v2キーバリューの例  
+ここでは、EOGeoDataLayerをJSON-LD形式でkey-valueにした例を示す。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
@@ -358,8 +385,10 @@ EOGeoDataLayer:
   "isOutputOf": "EOAnalysis:02"  
 }  
 ```  
-#### EOGeoDataLayer NGSI-v2の正規化例。  
-ここでは、正規化されたJSON-LD形式のEOGeoDataLayerの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOGeoDataLayer NGSI-v2 正規化例  
+以下は、EOGeoDataLayerをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
@@ -424,128 +453,140 @@ EOGeoDataLayer:
   }  
 }  
 ```  
-#### EOGeoDataLayer NGSI-LD key-values 例  
-EOGeoDataLayerをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOGeoDataLayer NGSI-LD key-value の例。  
+ここでは、EOGeoDataLayerをJSON-LD形式でkey-valueにした例を示す。これは`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
-  "type": "EOGeoDataLayer",  
-  "localServerPath": "/data/www/oil_map.tif",  
-  "storageFormat": "GeoTIFF",  
-  "geoMetadata": "/data/www/metadata_oil.xml",  
-  "contentInformation": [  
-    {  
-      "layer_name": "band1",  
-      "layer_categorization": "categorical",  
-      "values_explanation": [  
-        "1:oil",  
-        "0:water"  
-      ]  
-    }  
-  ],  
-  "location": {  
-    "type": "Polygon",  
-    "coordinates": [  
-      [  
-        [  
-          23.48993,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.415  
-        ],  
-        [  
-          23.66274,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.53524  
-        ],  
-        [  
-          23.48993,  
-          42.415  
+    "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
+    "type": "EOGeoDataLayer",  
+    "contentInformation": [  
+        {  
+            "layer_name": "band1",  
+            "layer_categorization": "categorical",  
+            "values_explanation": [  
+                "1:oil",  
+                "0:water"  
+            ]  
+        }  
+    ],  
+    "geoMetadata": "/data/www/metadata_oil.xml",  
+    "isOutputOf": "EOAnalysis:02",  
+    "localServerPath": "/data/www/oil_map.tif",  
+    "location": {  
+        "type": "Polygon",  
+        "coordinates": [  
+            [  
+                [  
+                    23.48993,  
+                    42.415  
+                ],  
+                [  
+                    23.66274,  
+                    42.415  
+                ],  
+                [  
+                    23.66274,  
+                    42.53524  
+                ],  
+                [  
+                    23.48993,  
+                    42.53524  
+                ],  
+                [  
+                    23.48993,  
+                    42.415  
+                ]  
+            ]  
         ]  
-      ]  
+    },  
+    "storageFormat": "GeoTIFF",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
     ]  
-  },  
-  "isOutputOf": "EOAnalysis:02",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### EOGeoDataLayer NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のEOGeoDataLayerの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### EOGeoDataLayer NGSI-LD 正規化例  
+ここでは、EOGeoDataLayerをJSON-LD形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
-  "type": "EOGeoDataLayer",  
-  "createdAt": "2020-03-13T15:42:00Z",  
-  "modifiedAt": "2020-03-13T15:45:00Z",  
-  "isOutputOf": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:EOAnalysis:02"  
-  },  
-  "localServerPath": {  
-    "type": "Property",  
-    "value": "/data/www/water_mask.tif"  
-  },  
-  "storageFormat": {  
-    "type": "Property",  
-    "value": "GeoTIFF"  
-  },  
-  "geoMetadata": {  
-    "type": "Property",  
-    "value": "/data/www/metadata.xml"  
-  },  
-  "contentInformation": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "layer_name": "band1",  
-        "layer_categorization": "categorical",  
-        "values_explanation": [  
-          "1:inundated",  
-          "0:non inundated"  
+    "id": "urn:ngsi-ld:EOGeoDataLayer:1",  
+    "type": "EOGeoDataLayer",  
+    "contentInformation": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "layer_name": "band1",  
+                "layer_categorization": "categorical",  
+                "values_explanation": [  
+                    "1:inundated",  
+                    "0:non inundated"  
+                ]  
+            }  
         ]  
-      }  
+    },  
+    "createdAt": "2020-03-13T15:42:00Z",  
+    "geoMetadata": {  
+        "type": "Property",  
+        "value": "/data/www/metadata.xml"  
+    },  
+    "isOutputOf": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:EOAnalysis:02"  
+    },  
+    "localServerPath": {  
+        "type": "Property",  
+        "value": "/data/www/water_mask.tif"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Polygon",  
+            "coordinates": [  
+                [  
+                    [  
+                        23.6627,  
+                        41.88768  
+                    ],  
+                    [  
+                        25.85598,  
+                        43.38622  
+                    ],  
+                    [  
+                        23.4899,  
+                        43.78691  
+                    ],  
+                    [  
+                        22.35609,  
+                        42.28869  
+                    ],  
+                    [  
+                        23.6627,  
+                        41.88769  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "modifiedAt": "2020-03-13T15:45:00Z",  
+    "storageFormat": {  
+        "type": "Property",  
+        "value": "GeoTIFF"  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"  
     ]  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Polygon",  
-      "coordinates": [  
-        [  
-          [  
-            23.6627,  
-            41.88768  
-          ],  
-          [  
-            25.85598,  
-            43.38622  
-          ],  
-          [  
-            23.4899,  
-            43.78691  
-          ],  
-          [  
-            22.35609,  
-            42.28869  
-          ],  
-          [  
-            23.6627,  
-            41.88769  
-          ]  
-        ]  
-      ]  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
