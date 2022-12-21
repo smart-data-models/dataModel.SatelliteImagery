@@ -1,0 +1,3 @@
+/* (Beta) Export of data model EOAnalysis of the subject dataModel.SatelliteImagery for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE EOAnalysis_type AS ENUM ('EOAnalysis');
+CREATE TABLE EOAnalysis (address json, alternateName text, analysisType text, analyzedAt timestamp, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, isAnalysisOf text, location json, name text, owner json, provider text, resultDescription text, seeAlso json, source text, type EOAnalysis_type);
