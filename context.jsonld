@@ -1,5 +1,11 @@
 {
     "@context": {
+        "EOAnalysis": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOAnalysis",
+        "EODataHub": "https://smartdatamodels.org/dataModel.SatelliteImagery/EODataHub",
+        "EOGeoDataLayer": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOGeoDataLayer",
+        "EOInstrument": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOInstrument",
+        "EOProduct": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOProduct",
+        "EOSatellitePlatform": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOSatellitePlatform",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "analysisType": "https://smartdatamodels.org/dataModel.SatelliteImagery/analysisType",
