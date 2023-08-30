@@ -16,7 +16,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOProduct.",
+                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOProduct",
                     "enum": [
                         "EOProduct"
                     ]
@@ -43,7 +43,7 @@
                 },
                 "cloudCoverage": {
                     "type": "number",
-                    "description": "Property.  Model:'https://schema.org/Number'. Units:'percent'. The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+                    "description": "Property.  Model:'https://schema.org/Number'. Units:'percent'. The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
                 },
                 "timeliness": {
                     "type": "string",
@@ -59,7 +59,7 @@
                 },
                 "orbitNumber": {
                     "type": "number",
-                    "description": "Property.  Model:'https://schema.org/Number'. The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code."
+                    "description": "Property.  Model:'https://schema.org/Number'. The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
                 },
                 "ingestionDate": {
                     "type": "string",
