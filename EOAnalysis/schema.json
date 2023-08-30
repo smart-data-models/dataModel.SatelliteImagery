@@ -16,7 +16,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOAnalysis.",
+                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOAnalysis",
                     "enum": [
                         "EOAnalysis"
                     ]
@@ -32,11 +32,11 @@
                 },
                 "resultDescription": {
                     "type": "string",
-                    "description": "Property. The description of the analysis outcome."
+                    "description": "Property. The description of the analysis outcome"
                 },
                 "analysisType": {
                     "type": "string",
-                    "description": "Property. Entity's type of analysis applied."
+                    "description": "Property. Entity's type of analysis applied"
                 },
                 "isAnalysisOf": {
                     "type": "string",
