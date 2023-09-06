@@ -7,116 +7,155 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Esta entidad contiene una descripción armonizada de un EOProducto genérico realizado para el dominio de la Imaginería Satelital. Esta entidad está asociada principalmente a los productos de satélite relacionados con las aplicaciones de análisis de la observación de la Tierra.**  
+Descripción global: **Esta entidad contiene una descripción armonizada de un EOProducto genérico realizado para el dominio Satellite Imagerry. Esta entidad se asocia principalmente a los productos de satélite relacionados con las aplicaciones de análisis de observación de la Tierra.**.  
 versión: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudCoverage[number]`: El porcentaje de cobertura de las nubes. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html).  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `hostedOn[string]`: El ID del centro de datos en el que está alojado el producto  - `id[*]`: Identificador único de la entidad  - `ingestionDate[string]`: El momento en que los datos se pusieron a disposición en el archivo en línea  . Model: [https://schema.org/Time](https://schema.org/Time)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `observedBy[string]`: El ID del instrumento con el que se observó el producto  - `orbitDirection[string]`: La orientación del paso de la órbita  . Model: [https://schema.org/Text](https://schema.org/Text)- `orbitNumber[number]`: El número de órbita del pase del satélite. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html).  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `processingLevel[string]`: Cadena de texto obligatoria utilizada para declarar el nivel de procesamiento del producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `productFormat[string]`: Cadena de texto obligatoria utilizada para declarar el formato del producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `productID[string]`: Cadena de texto obligatoria utilizada para declarar el ID único del producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `productType[string]`: Cadena de texto obligatoria utilizada para declarar el tipo de producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `productURL[string]`: Una url obligatoria utilizada para declarar el enlace de descarga del producto  . Model: [https://schema.org/url](https://schema.org/url)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sensingDate[string]`: La hora a la que el sensor tomó la imagen  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStartedAt[string]`: La hora de la adquisición a bordo del satélite de la primera línea de la imagen en el producto  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStoppedAt[string]`: La hora de la adquisición a bordo del satélite de la última línea de la imagen en el producto  . Model: [https://schema.org/Time](https://schema.org/Time)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `timeliness[string]`: La puntualidad del producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo de entidad NGSI-LD. Debe ser igual a EOProducto.  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudCoverage[number]`: Porcentaje de cobertura de nubes. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `hostedOn[uri]`: ID del concentrador de datos en el que está alojado el producto  - `id[*]`: Identificador único de la entidad  - `ingestionDate[date-time]`: Momento en que los datos estuvieron disponibles en el archivo en línea  . Model: [https://schema.org/Time](https://schema.org/Time)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `observedBy[uri]`: ID del instrumento con el que se observó el producto  - `orbitDirection[string]`: La orientación del pase orbital  . Model: [https://schema.org/Text](https://schema.org/Text)- `orbitNumber[number]`: Número de órbita del pase del satélite. Todas las unidades se aceptan en código [CEFACT](https://www.unece.org/cefact.html)  . Model: [ https://schema.org/Number]( https://schema.org/Number)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `processingLevel[string]`: Cadena de texto obligatoria utilizada para declarar el nivel de procesamiento del producto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `productFormat[string]`: Cadena de texto obligatoria utilizada para declarar el formato del producto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `productID[string]`: Cadena de texto obligatoria utilizada para declarar el ID único del producto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `productType[string]`: Cadena de texto obligatoria utilizada para declarar el tipo de producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `productURL[string]`: Una url obligatoria utilizada para declarar el enlace de descarga del producto  . Model: [https://schema.org/url](https://schema.org/url)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `sensingDate[date-time]`: Hora a la que el sensor tomó la imagen  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStartedAt[date-time]`: Hora de la adquisición por satélite de la primera línea de la imagen del producto  . Model: [https://schema.org/Time](https://schema.org/Time)- `sensingStoppedAt[date-time]`: Hora de la adquisición a bordo del satélite de la última línea de la imagen del producto  . Model: [https://schema.org/Time](https://schema.org/Time)- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `timeliness[string]`: La puntualidad del producto  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo de entidad NGSI-LD. Debe ser igual a EOProducto  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `location`  - `productFormat`  - `productID`  - `productURL`  - `sensingDate`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 EOProduct:    
-  description: 'This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.'    
+  description: This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     cloudCoverage:    
-      description: 'The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The cloud coverage percentage. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
         units: percent    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     hostedOn:    
-      description: 'The ID of the data hub that the product is hosted on'    
+      description: The ID of the data hub that the product is hosted on    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
     id:    
-      anyOf: &eoproduct_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     ingestionDate:    
-      description: 'The time at which the data was made available in the online archive'    
+      description: The time at which the data was made available in the online archive    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -125,7 +164,7 @@ EOProduct:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -144,9 +183,11 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -168,9 +209,11 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -194,9 +237,11 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -217,9 +262,11 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -243,9 +290,11 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -271,23 +320,25 @@ EOProduct:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observedBy:    
-      description: 'The ID of the instrument that the product was observed by'    
+      description: The ID of the instrument that the product was observed by    
       format: uri    
       type: string    
       x-ngsi:    
         type: Relationship    
     orbitDirection:    
-      description: 'The orbit pass orientation'    
+      description: The orbit pass orientation    
       enum:    
         - Ascending    
         - Descending    
@@ -296,51 +347,65 @@ EOProduct:
         model: https://schema.org/Text    
         type: Property    
     orbitNumber:    
-      description: 'The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code.'    
+      description: 'The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code'    
       type: number    
       x-ngsi:    
         model: ' https://schema.org/Number'    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *eoproduct_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     processingLevel:    
-      description: 'A mandatory text string used to declare the processing level of the product'    
+      description: A mandatory text string used to declare the processing level of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     productFormat:    
-      description: 'A mandatory text string used to declare the format of the product'    
+      description: A mandatory text string used to declare the format of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     productID:    
-      description: 'A mandatory text string used to declare the unique ID of the product'    
+      description: A mandatory text string used to declare the unique ID of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     productType:    
-      description: 'A mandatory text string used to declare the type of the product'    
+      description: A mandatory text string used to declare the type of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     productURL:    
-      description: 'A mandatory url used to declare the downlaod link of the product'    
+      description: A mandatory url used to declare the downlaod link of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/url    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -352,39 +417,39 @@ EOProduct:
       x-ngsi:    
         type: Property    
     sensingDate:    
-      description: 'The time at which the image was taken by the sensor'    
+      description: The time at which the image was taken by the sensor    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Time    
         type: Property    
     sensingStartedAt:    
-      description: 'The time of the satellite on-board acquisition of the first line of the image in the product'    
+      description: The time of the satellite on-board acquisition of the first line of the image in the product    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Time    
         type: Property    
     sensingStoppedAt:    
-      description: 'The time of the satellite on-board acquisition of the last line of the image in the product'    
+      description: The time of the satellite on-board acquisition of the last line of the image in the product    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Time    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     timeliness:    
-      description: 'The timeliness of the product'    
+      description: The timeliness of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI-LD Entity Type. It must be equal to EOProduct.'    
+      description: NGSI-LD Entity Type. It must be equal to EOProduct    
       enum:    
         - EOProduct    
       type: string    
@@ -400,7 +465,7 @@ EOProduct:
     - sensingDate    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOProduct/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/EOProduct/schema.json    
   x-model-tags: ""    
@@ -413,7 +478,7 @@ EOProduct:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### EOProduct NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un EOProducto en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un EOProduct en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -449,7 +514,7 @@ EOProduct:
 ```  
 </details>  
 #### EOProducto NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un EOProducto en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un EOProducto en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -536,7 +601,7 @@ EOProduct:
 ```  
 </details>  
 #### EOProduct NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un EOProducto en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un EOProduct en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -590,7 +655,7 @@ EOProduct:
 ```  
 </details>  
 #### EOProducto NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un EOProducto en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un EOProducto en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -698,7 +763,7 @@ EOProduct:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
