@@ -14,9 +14,17 @@
         "analysisType": "https://smartdatamodels.org/dataModel.SatelliteImagery/analysisType",
         "analyzedAt": "https://smartdatamodels.org/dataModel.SatelliteImagery/analyzedAt",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "carriedOn": "https://smartdatamodels.org/dataModel.SatelliteImagery/carriedOn",
         "cloudCoverage": "https://smartdatamodels.org/dataModel.SatelliteImagery/cloudCoverage",
         "contentInformation": "https://smartdatamodels.org/dataModel.SatelliteImagery/contentInformation",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataHubName": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubName",
         "dataHubURL": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubURL",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
@@ -32,6 +40,8 @@
         "instrumentName": "https://smartdatamodels.org/dataModel.SatelliteImagery/instrumentName",
         "isAnalysisOf": "https://smartdatamodels.org/dataModel.SatelliteImagery/isAnalysisOf",
         "isOutputOf": "https://smartdatamodels.org/dataModel.SatelliteImagery/isOutputOf",
+        "layer_categorization": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_categorization",
+        "layer_name": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_name",
         "localServerPath": "https://smartdatamodels.org/dataModel.SatelliteImagery/localServerPath",
         "location": "ngsi-ld:location",
         "name": "https://smartdatamodels.org/name",
@@ -64,6 +74,7 @@
         "streetNr": "https://smartdatamodels.org/streetNr",
         "swathID": "https://smartdatamodels.org/dataModel.SatelliteImagery/swathID",
         "timeliness": "https://smartdatamodels.org/dataModel.SatelliteImagery/timeliness",
-        "type": "@type"
+        "type": "@type",
+        "values_explanation": "https://smartdatamodels.org/dataModel.SatelliteImagery/values_explanation"
     }
 }
