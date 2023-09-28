@@ -16,7 +16,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOGeoDataLayer.",
+                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOGeoDataLayer",
                     "enum": [
                         "EOGeoDataLayer"
                     ]
@@ -27,7 +27,7 @@
                 },
                 "storageFormat": {
                     "type": "string",
-                    "description": "Property. Entity's satorage format."
+                    "description": "Property. Entity's satorage format"
                 },
                 "geoMetadata": {
                     "type": "string",

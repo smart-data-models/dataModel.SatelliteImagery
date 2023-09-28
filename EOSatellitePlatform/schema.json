@@ -13,7 +13,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOSatellitePlatform.",
+                    "description": "Property. NGSI-LD Entity Type. It must be equal to EOSatellitePlatform",
                     "enum": [
                         "EOSatellitePlatform"
                     ]

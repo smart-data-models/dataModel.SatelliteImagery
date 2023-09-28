@@ -1,16 +1,16 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered.
 contributors:
-- 
-  name: Marios
+- name: Marios
   surname: Bakratsas
   mail:
   organization: CERTH-ITI. https://www.iti.gr/
   project: aqua3S. https://aqua3s.eu/
-  comments: Participation in the design of the SatelliteImagery data model. Ιmplementation of Schema.json files for all involved entities and the corresponding payload examples.
-- 
-  name: Konstantinos
+  comments: "Participation in the design of the SatelliteImagery data model. \u0399mplementation of Schema.json files for all involved entities and the corresponding payload examples."
+  year: 2022
+- name: Konstantinos
   surname: Naskou
   mail: konstantinos.naskou@iccs.gr
   organization: Institute of Communication and Computer Systems (https://i-sense.iccs.gr/)
   project: aqua3S (https://aqua3s.eu)
   comments: Initial design of the SatelliteImagery data model and the related entities. Produced the graphml illustration.
+  year: 2022

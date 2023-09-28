@@ -1,68 +1,68 @@
 {
-  "id": "urn:ngsi-ld:EOGeoDataLayer:1",
-  "type": "EOGeoDataLayer",
-  "createdAt": "2020-03-13T15:42:00Z",
-  "modifiedAt": "2020-03-13T15:45:00Z",
-  "isOutputOf": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:EOAnalysis:02"
-  },
-  "localServerPath": {
-    "type": "Property",
-    "value": "/data/www/water_mask.tif"
-  },
-  "storageFormat": {
-    "type": "Property",
-    "value": "GeoTIFF"
-  },
-  "geoMetadata": {
-    "type": "Property",
-    "value": "/data/www/metadata.xml"
-  },
-  "contentInformation": {
-    "type": "Property",
-    "value": [
-      {
-        "layer_name": "band1",
-        "layer_categorization": "categorical",
-        "values_explanation": [
-          "1:inundated",
-          "0:non inundated"
+    "id": "urn:ngsi-ld:EOGeoDataLayer:1",
+    "type": "EOGeoDataLayer",
+    "contentInformation": {
+        "type": "Property",
+        "value": [
+            {
+                "layer_name": "band1",
+                "layer_categorization": "categorical",
+                "values_explanation": [
+                    "1:inundated",
+                    "0:non inundated"
+                ]
+            }
         ]
-      }
+    },
+    "createdAt": "2020-03-13T15:42:00Z",
+    "geoMetadata": {
+        "type": "Property",
+        "value": "/data/www/metadata.xml"
+    },
+    "isOutputOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EOAnalysis:02"
+    },
+    "localServerPath": {
+        "type": "Property",
+        "value": "/data/www/water_mask.tif"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        23.6627,
+                        41.88768
+                    ],
+                    [
+                        25.85598,
+                        43.38622
+                    ],
+                    [
+                        23.4899,
+                        43.78691
+                    ],
+                    [
+                        22.35609,
+                        42.28869
+                    ],
+                    [
+                        23.6627,
+                        41.88769
+                    ]
+                ]
+            ]
+        }
+    },
+    "modifiedAt": "2020-03-13T15:45:00Z",
+    "storageFormat": {
+        "type": "Property",
+        "value": "GeoTIFF"
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
     ]
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            23.6627,
-            41.88768
-          ],
-          [
-            25.85598,
-            43.38622
-          ],
-          [
-            23.4899,
-            43.78691
-          ],
-          [
-            22.35609,
-            42.28869
-          ],
-          [
-            23.6627,
-            41.88769
-          ]
-        ]
-      ]
-    }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
 }

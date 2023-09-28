@@ -1,19 +1,37 @@
 {
     "@context": {
+        "EOAnalysis": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOAnalysis",
+        "EODataHub": "https://smartdatamodels.org/dataModel.SatelliteImagery/EODataHub",
+        "EOGeoDataLayer": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOGeoDataLayer",
+        "EOInstrument": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOInstrument",
+        "EOProduct": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOProduct",
+        "EOSatellitePlatform": "https://smartdatamodels.org/dataModel.SatelliteImagery/EOSatellitePlatform",
         "address": "https://smartdatamodels.org/address",
+        "addressCountry": "https://smartdatamodels.org/addressCountry",
+        "addressLocality": "https://smartdatamodels.org/addressLocality",
+        "addressRegion": "https://smartdatamodels.org/addressRegion",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "analysisType": "https://smartdatamodels.org/dataModel.SatelliteImagery/analysisType",
         "analyzedAt": "https://smartdatamodels.org/dataModel.SatelliteImagery/analyzedAt",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "carriedOn": "https://smartdatamodels.org/dataModel.SatelliteImagery/carriedOn",
         "cloudCoverage": "https://smartdatamodels.org/dataModel.SatelliteImagery/cloudCoverage",
         "contentInformation": "https://smartdatamodels.org/dataModel.SatelliteImagery/contentInformation",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "dataHubName": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubName",
         "dataHubURL": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubURL",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "description": "http://purl.org/dc/terms/description",
+        "district": "https://smartdatamodels.org/district",
         "geoMetadata": "https://smartdatamodels.org/dataModel.SatelliteImagery/geoMetadata",
         "hostedOn": "https://smartdatamodels.org/dataModel.SatelliteImagery/hostedOn",
         "id": "@id",
@@ -22,6 +40,8 @@
         "instrumentName": "https://smartdatamodels.org/dataModel.SatelliteImagery/instrumentName",
         "isAnalysisOf": "https://smartdatamodels.org/dataModel.SatelliteImagery/isAnalysisOf",
         "isOutputOf": "https://smartdatamodels.org/dataModel.SatelliteImagery/isOutputOf",
+        "layer_categorization": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_categorization",
+        "layer_name": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_name",
         "localServerPath": "https://smartdatamodels.org/dataModel.SatelliteImagery/localServerPath",
         "location": "ngsi-ld:location",
         "name": "https://smartdatamodels.org/name",
@@ -35,6 +55,8 @@
         "platformNSSDCA": "https://smartdatamodels.org/dataModel.SatelliteImagery/platformNSSDCA",
         "platformName": "https://smartdatamodels.org/dataModel.SatelliteImagery/platformName",
         "polarizationMode": "https://smartdatamodels.org/dataModel.SatelliteImagery/polarizationMode",
+        "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+        "postalCode": "https://smartdatamodels.org/postalCode",
         "processingLevel": "https://smartdatamodels.org/dataModel.SatelliteImagery/processingLevel",
         "productFormat": "https://smartdatamodels.org/dataModel.SatelliteImagery/productFormat",
         "productID": "https://smartdatamodels.org/dataModel.SatelliteImagery/productID",
@@ -48,8 +70,11 @@
         "sensingStoppedAt": "https://smartdatamodels.org/dataModel.SatelliteImagery/sensingStoppedAt",
         "source": "https://smartdatamodels.org/source",
         "storageFormat": "https://smartdatamodels.org/dataModel.SatelliteImagery/storageFormat",
+        "streetAddress": "https://smartdatamodels.org/streetAddress",
+        "streetNr": "https://smartdatamodels.org/streetNr",
         "swathID": "https://smartdatamodels.org/dataModel.SatelliteImagery/swathID",
         "timeliness": "https://smartdatamodels.org/dataModel.SatelliteImagery/timeliness",
-        "type": "@type"
+        "type": "@type",
+        "values_explanation": "https://smartdatamodels.org/dataModel.SatelliteImagery/values_explanation"
     }
 }
