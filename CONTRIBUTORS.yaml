@@ -9,7 +9,7 @@ contributors:
   year: 2022
 - name: Konstantinos
   surname: Naskou
-  mail: konstantinos.naskou@iccs.gr
+  mail:
   organization: Institute of Communication and Computer Systems (https://i-sense.iccs.gr/)
   project: aqua3S (https://aqua3s.eu)
   comments: Initial design of the SatelliteImagery data model and the related entities. Produced the graphml illustration.
