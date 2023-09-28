@@ -1,9 +1,9 @@
-description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
+description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered.
 contributors:
 - 
   name: Marios
   surname: Bakratsas
-  mail: mbakratsas@iti.gr
+  mail:
   organization: CERTH-ITI. https://www.iti.gr/
   project: aqua3S. https://aqua3s.eu/
   comments: Participation in the design of the SatelliteImagery data model. Ιmplementation of Schema.json files for all involved entities and the corresponding payload examples.
