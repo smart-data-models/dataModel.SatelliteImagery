@@ -1,3 +1,3 @@
-/* (Beta) Export of data model EOGeoDataLayer of the subject dataModel.SatelliteImagery for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model EOGeoDataLayer of the subject dataModel.SatelliteImagery for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EOGeoDataLayer_type AS ENUM ('EOGeoDataLayer');
-CREATE TABLE EOGeoDataLayer (address json, alternateName text, areaServed text, contentInformation json, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, geoMetadata text, id text, isOutputOf text, localServerPath text, location json, name text, owner json, seeAlso json, source text, storageFormat text, type EOGeoDataLayer_type);
+CREATE TABLE EOGeoDataLayer (address JSON, alternateName TEXT, areaServed TEXT, contentInformation JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, geoMetadata TEXT, isOutputOf TEXT, localServerPath TEXT, name TEXT, owner JSON, source TEXT, storageFormat TEXT, type EOGeoDataLayer_type);
