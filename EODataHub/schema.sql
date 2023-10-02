@@ -1,3 +1,3 @@
-/* (Beta) Export of data model EODataHub of the subject dataModel.SatelliteImagery for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model EODataHub of the subject dataModel.SatelliteImagery for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EODataHub_type AS ENUM ('EODataHub');
-CREATE TABLE EODataHub (alternateName text, dataHubName text, dataHubURL text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, name text, owner json, seeAlso json, source text, type EODataHub_type);
+CREATE TABLE EODataHub (alternateName TEXT, dataHubName TEXT, dataHubURL TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, source TEXT, type EODataHub_type);
