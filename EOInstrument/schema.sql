@@ -1,3 +1,3 @@
 /* (Beta) Export of data model EOInstrument of the subject dataModel.SatelliteImagery for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EOInstrument_type AS ENUM ('EOInstrument');
-CREATE TABLE EOInstrument (alternateName TEXT, carriedOn TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, instrumentID TEXT, instrumentName TEXT, name TEXT, operationalMode TEXT, owner JSON, polarizationMode TEXT, source TEXT, swathID TEXT, type EOInstrument_type);
+CREATE TABLE EOInstrument (alternateName TEXT, carriedOn TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, instrumentID TEXT, instrumentName TEXT, name TEXT, operationalMode TEXT, owner JSON, polarizationMode TEXT, seeAlso JSON, source TEXT, swathID TEXT, type EOInstrument_type);
