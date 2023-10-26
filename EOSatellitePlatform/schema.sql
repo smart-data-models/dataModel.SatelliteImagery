@@ -1,3 +1,3 @@
 /* (Beta) Export of data model EOSatellitePlatform of the subject dataModel.SatelliteImagery for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE EOSatellitePlatform_type AS ENUM ('EOSatellitePlatform');
-CREATE TABLE EOSatellitePlatform (alternateName TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, platformID TEXT, platformNSSDCA TEXT, platformName TEXT, source TEXT, type EOSatellitePlatform_type);
+CREATE TABLE EOSatellitePlatform (alternateName TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, name TEXT, owner JSON, platformID TEXT, platformNSSDCA TEXT, platformName TEXT, seeAlso JSON, source TEXT, type EOSatellitePlatform_type);
