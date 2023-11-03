@@ -1,0 +1,2 @@
+"id_", "type_", "createdAt_", "modifiedAt_", "platformID__type_", "platformID__value_", "platformName__type_", "platformName__value_", "platformNSSDCA__type_", "platformNSSDCA__value_"
+"urn:ngsi-ld:EOSatellitePlatform:154", "EOSatellitePlatform", "2020-03-13T15:42:00Z", "2020-03-13T15:45:00Z", "Property", "A", "Property", "Sentinel-2", "Property", "2015-028A"
