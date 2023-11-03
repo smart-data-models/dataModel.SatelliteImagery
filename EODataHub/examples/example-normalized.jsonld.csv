@@ -1,0 +1,2 @@
+"id_", "type_", "createdAt_", "dataHubName__type_", "dataHubName__value_", "dataHubURL__type_", "dataHubURL__value_", "modifiedAt_", "@context__0_"
+"urn:ngsi-ld:EODataHub:123", "EODataHub", "2020-03-13T15:42:00Z", "Property", "ESA Copernicus Open Access Hub", "url", "http://scihub.copernicus.eu", "2020-03-13T15:45:00Z", "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
