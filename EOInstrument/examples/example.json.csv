@@ -1,0 +1,2 @@
+"id_", "type_", "instrumentID_", "instrumentName_", "operationalMode_", "polarizationMode_", "swathID_", "carriedOn_"
+"urn:ngsi-ld:EOInstrument:154", "EOInstrument", "OLCI", "Ocean Land Colour Instrument", "INS-NOBS", "HH+HV", "S1", "urn:ngsi-ld:EOSatellitePlatform:154"
