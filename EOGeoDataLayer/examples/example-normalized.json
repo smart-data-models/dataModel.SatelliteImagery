@@ -19,16 +19,19 @@
     "type": "Property",
     "value": "/data/www/metadata_oil.xml"
   },
-  "contentInformation": [
-    {
-      "layer_name": "band1",
-      "layer_categorization": "categorical",
-      "values_explanation": [
-        "1:oil",
-        "0:water"
-      ]
-    }
-  ],
+  "contentInformation": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "layer_name": "band1",
+        "layer_categorization": "categorical",
+        "values_explanation": [
+          "1:oil",
+          "0:water"
+        ]
+      }
+    ]
+  },
   "location": {
     "type": "GeoProperty",
     "value": {
