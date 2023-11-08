@@ -12,7 +12,7 @@
   },
   "isAnalysisOf": {
     "type": "Relationship",
-    "object": "urn:ngsi-ld:EOProduct:123"
+    "value": "urn:ngsi-ld:EOProduct:123"
   },
   "provider": {
     "type": "Property",
