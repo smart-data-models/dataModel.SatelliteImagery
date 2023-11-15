@@ -1,22 +1,28 @@
 {
   "id": "urn:ngsi-ld:EOGeoDataLayer:1",
   "type": "EOGeoDataLayer",
-  "createdAt": "2020-03-13T15:42:00Z",
-  "modifiedAt": "2020-03-13T15:45:00Z",
+  "createdAt": {
+    "type": "DateTime",
+    "value": "2020-03-13T15:42:00Z"
+  },
+  "modifiedAt": {
+    "type": "DateTime",
+    "value": "2020-03-13T15:45:00Z"
+  },
   "isOutputOf": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:EOAnalysis:02"
+    "type": "Text",
+    "value": "urn:ngsi-ld:EOAnalysis:02"
   },
   "localServerPath": {
-    "type": "Property",
+    "type": "Text",
     "value": "/data/www/oil_map.tif"
   },
   "storageFormat": {
-    "type": "Property",
+    "type": "Text",
     "value": "GeoTIFF"
   },
   "geoMetadata": {
-    "type": "Property",
+    "type": "Text",
     "value": "/data/www/metadata_oil.xml"
   },
   "contentInformation": {
@@ -33,7 +39,7 @@
     ]
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Polygon",
       "coordinates": [
