@@ -1,11 +1,11 @@
 {
-    "id": "urn:ngsi-ld:EOInstrument:154",
-    "type": "EOInstrument",
-    "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",
-    "instrumentID": "MSI",
-    "instrumentName": "Multi-Spectral Instrument",
-    "swathID": "S2",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:EOInstrument:154",
+  "type": "EOInstrument",
+  "carriedOn": "urn:ngsi-ld:EOSatellitePlatform:154",
+  "instrumentID": "MSI",
+  "instrumentName": "Multi-Spectral Instrument",
+  "swathID": "S2",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
