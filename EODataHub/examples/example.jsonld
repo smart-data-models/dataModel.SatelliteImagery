@@ -1,9 +1,9 @@
 {
-    "id": "EODataHub:123",
-    "type": "EODataHub",
-    "dataHubName": "ESA Copernicus Open Access Hub",
-    "dataHubURL": "http://scihub.copernicus.eu",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
-    ]
+  "id": "EODataHub:123",
+  "type": "EODataHub",
+  "dataHubName": "ESA Copernicus Open Access Hub",
+  "dataHubURL": "http://scihub.copernicus.eu",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
