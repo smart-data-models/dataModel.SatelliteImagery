@@ -1,39 +1,39 @@
 {
-    "id": "EOAnalysis:02",
-    "type": "EOAnalysis",
-    "analysisType": "Flood Detection",
-    "analyzedAt": "2020-12-24T12:00:00Z",
-    "isAnalysisOf": "urn:ngsi-ld:EOProduct:123",
-    "location": {
-        "type": "Polygon",
-        "coordinates": [
-            [
-                [
-                    23.48993,
-                    42.415
-                ],
-                [
-                    23.66274,
-                    42.415
-                ],
-                [
-                    23.66274,
-                    42.53524
-                ],
-                [
-                    23.48993,
-                    42.53524
-                ],
-                [
-                    23.48993,
-                    42.415
-                ]
-            ]
+  "id": "EOAnalysis:02",
+  "type": "EOAnalysis",
+  "analysisType": "Flood Detection",
+  "analyzedAt": "2020-12-24T12:00:00Z",
+  "isAnalysisOf": "urn:ngsi-ld:EOProduct:123",
+  "location": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          23.48993,
+          42.415
+        ],
+        [
+          23.66274,
+          42.415
+        ],
+        [
+          23.66274,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.415
         ]
-    },
-    "provider": "aqua3S/CERTH",
-    "resultDescription": "The detected oil covers 1000 square meters",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+      ]
     ]
+  },
+  "provider": "aqua3S/CERTH",
+  "resultDescription": "The detected oil covers 1000 square meters",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
