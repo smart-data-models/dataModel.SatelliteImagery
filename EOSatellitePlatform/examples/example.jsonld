@@ -1,10 +1,10 @@
 {
-    "id": "urn:ngsi-ld:EOSatellitePlatform:154",
-    "type": "EOSatellitePlatform",
-    "platformID": "A",
-    "platformNSSDCA": "2015-028A",
-    "platformName": "Sentinel-2",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:EOSatellitePlatform:154",
+  "type": "EOSatellitePlatform",
+  "platformID": "A",
+  "platformNSSDCA": "2015-028A",
+  "platformName": "Sentinel-2",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
