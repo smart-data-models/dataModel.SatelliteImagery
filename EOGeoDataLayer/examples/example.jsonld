@@ -1,48 +1,48 @@
 {
-    "id": "urn:ngsi-ld:EOGeoDataLayer:1",
-    "type": "EOGeoDataLayer",
-    "contentInformation": [
-        {
-            "layer_name": "band1",
-            "layer_categorization": "categorical",
-            "values_explanation": [
-                "1:oil",
-                "0:water"
-            ]
-        }
-    ],
-    "geoMetadata": "/data/www/metadata_oil.xml",
-    "isOutputOf": "EOAnalysis:02",
-    "localServerPath": "/data/www/oil_map.tif",
-    "location": {
-        "type": "Polygon",
-        "coordinates": [
-            [
-                [
-                    23.48993,
-                    42.415
-                ],
-                [
-                    23.66274,
-                    42.415
-                ],
-                [
-                    23.66274,
-                    42.53524
-                ],
-                [
-                    23.48993,
-                    42.53524
-                ],
-                [
-                    23.48993,
-                    42.415
-                ]
-            ]
+  "id": "urn:ngsi-ld:EOGeoDataLayer:1",
+  "type": "EOGeoDataLayer",
+  "contentInformation": [
+    {
+      "layer_name": "band1",
+      "layer_categorization": "categorical",
+      "values_explanation": [
+        "1:oil",
+        "0:water"
+      ]
+    }
+  ],
+  "geoMetadata": "/data/www/metadata_oil.xml",
+  "isOutputOf": "EOAnalysis:02",
+  "localServerPath": "/data/www/oil_map.tif",
+  "location": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          23.48993,
+          42.415
+        ],
+        [
+          23.66274,
+          42.415
+        ],
+        [
+          23.66274,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.53524
+        ],
+        [
+          23.48993,
+          42.415
         ]
-    },
-    "storageFormat": "GeoTIFF",
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+      ]
     ]
+  },
+  "storageFormat": "GeoTIFF",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
