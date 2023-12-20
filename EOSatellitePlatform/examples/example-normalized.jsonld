@@ -1,8 +1,6 @@
 {
     "id": "urn:ngsi-ld:EOSatellitePlatform:154",
     "type": "EOSatellitePlatform",
-    "createdAt": "2020-03-13T15:42:00Z",
-    "modifiedAt": "2020-03-13T15:45:00Z",
     "platformID": {
         "type": "Property",
         "value": "B"
