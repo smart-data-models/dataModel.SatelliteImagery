@@ -1,11 +1,11 @@
 {
   "id": "urn:ngsi-ld:EODataHub:123",
   "type": "EODataHub",
-  "createdAt": {
+  "dateCreated": {
     "type": "DateTime",
     "value": "2020-03-13T15:42:00Z"
   },
-  "modifiedAt": {
+  "dateModified": {
     "type": "DateTime",
     "value": "2020-03-13T15:45:00Z"
   },
