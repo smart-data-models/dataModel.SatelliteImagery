@@ -12,7 +12,6 @@
             "@value": "2020-12-24T12:00:00Z"
         }
     },
-    "createdAt": "2020-03-13T15:42:00Z",
     "isAnalysisOf": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:EOProduct:123"
@@ -47,7 +46,6 @@
             ]
         }
     },
-    "modifiedAt": "2020-03-13T15:45:00Z",
     "provider": {
         "type": "Property",
         "value": "aqua3S/CERTH"
