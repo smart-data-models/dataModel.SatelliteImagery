@@ -5,7 +5,6 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:EOSatellitePlatform:154"
     },
-    "createdAt": "2020-03-13T15:42:00Z",
     "instrumentID": {
         "type": "Property",
         "value": "SAR-C"
@@ -14,7 +13,6 @@
         "type": "Property",
         "value": "Synthetic Aperture Radar (C-band)"
     },
-    "modifiedAt": "2020-03-13T15:45:00Z",
     "operationalMode": {
         "type": "Property",
         "value": "IW"
