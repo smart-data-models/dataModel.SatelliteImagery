@@ -6,7 +6,6 @@
         "value": 19.125499,
         "unitCode": "P1"
     },
-    "createdAt": "2020-03-13T15:42:00Z",
     "ingestionDate": {
         "type": "Property",
         "value": {
@@ -44,7 +43,6 @@
             ]
         }
     },
-    "modifiedAt": "2020-03-13T15:45:00Z",
     "orbitDirection": {
         "type": "Property",
         "value": "Descending"
