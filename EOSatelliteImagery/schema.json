@@ -85,7 +85,6 @@
             },
             "sensingDate":{
                "type":"string",
-               "format":"date-time",
                "description":"Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
             },
             "platformName":{
