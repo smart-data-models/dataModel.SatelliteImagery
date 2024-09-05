@@ -1,6 +1,7 @@
 {
   "productID": "S2A_MSIL1C_20240427T082601_N0510_R021_T36SVD_20240427T103126",
   "productURL": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(88f6e3c8-ae72-41dd-b5b9-014c3baa9634)/$value",
+  "type":"EOSatelliteImagery",
   "productBbox": {
     "type": "Polygon",
     "coordinates": [
