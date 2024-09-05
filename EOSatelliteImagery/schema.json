@@ -49,7 +49,7 @@
                             },
                             "layer_categorization": {
                                 "type": "string",
-                                "description": "Property. A string that describes the type of information (e.g. categorical, numerical)"
+                                "description": "Property. A string that describes the type of information (e.g. categorical, numerical)",
                                 "enum": [
                                     "categorical",
                                     "numerical"
@@ -57,7 +57,7 @@
                             },
                             "values_explanation": {
                                 "type": "array",
-                                "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
+                                "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])",
                                 "items": {
                                     "type": "string"
                                 }
