@@ -38,29 +38,32 @@
                "type":"string",
                "description":"Property.  Model:'https://schema.org/Text'. The provider of the algorithm"
             },
-            "contentInformation":{
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "layer_name":{
-                        "type":"string"
-                     },
-                     "layer_categorization":{
-                        "type":"string",
-                        "enum":[
-                           "categorical",
-                           "numerical"
-                        ]
-                     },
-                     "values_explanation":{
-                        "type":"array",
-                        "items":{
-                           "type":"string"
+             "contentInformation": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "layer_name": {
+                                "type": "string",
+                                "description": "Property. A string that states the layer name (e.g. band1)"
+                            },
+                            "layer_categorization": {
+                                "type": "string",
+                                "description": "Property. A string that describes the type of information (e.g. categorical, numerical)"
+                                "enum": [
+                                    "categorical",
+                                    "numerical"
+                                ]
+                            },
+                            "values_explanation": {
+                                "type": "array",
+                                "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
                         }
-                     }
-                  }
-               },
+                    },
                "description":"Property. An array that describes for each layer (e.g. band1) or entity name, the type of information (e.g. categorical, numerical) and an array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
             },
             "localServerPath":{
