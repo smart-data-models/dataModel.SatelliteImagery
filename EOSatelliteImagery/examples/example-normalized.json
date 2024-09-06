@@ -1,6 +1,6 @@
 {
    "id":"urn:ngsi-ld:EOGeoDataLayer:1234",
-   "type":"EOGeoDataLayer",
+   "type":"EOSatelliteImagery",
    "dataProvider":"CERTH",
    "contentInformation":[
       {
