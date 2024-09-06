@@ -71,9 +71,7 @@
     ],
     "required": [
         "id",
-        "type",
-        "localServerPath",
-        "storageFormat"
+        "type"
     ],
     "$schemaVersion": "0.0.1"
 }
