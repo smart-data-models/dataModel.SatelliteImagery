@@ -67,11 +67,5 @@
   "id": "KOURIS_ALGAE",
   "areaServed": "kouris",
   "provider": "CERTH",
-  "analysisType": "chl-monitoring",
-  "layer_name": "band1",
-  "layer_categorization": "numerical",
-  "values_explanation": [
-    "100: exceptional algae bloom",
-    "10: algae bloom"
-  ]
+  "analysisType": "chl-monitoring"
 }
