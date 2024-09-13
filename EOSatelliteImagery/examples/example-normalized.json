@@ -120,7 +120,7 @@
   },
   "orbitNumber": {
     "type": "Text",
-    "value": "021"
+    "value": 021
   },
   "platformName": {
     "type": "Text",
