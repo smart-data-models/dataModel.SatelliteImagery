@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [EOGeoDataLayer](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOGeoDataLayer/README.md). This entity contains a harmonised description of a generic EOGeoDataLayer made for the Satellite Imagerry domain. This entity is primarily associated with the output data layers related to Earth Observation Analysis applications.
 
+- [EOSatelliteImagery](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOSatelliteImagery/README.md). This schema defines a unified entity within the SatelliteImagery domain, consolidating attributes from all existing entities related to satellite imagery, designed to offer a holistic view in the EO proccess
+
 - [EOInstrument](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOInstrument/README.md). This entity contains a harmonised description of a generic EOInstrument made for the Satellite Imagerry domain. This entity is primarily associated with the satellite instruments related to Earth Observation Analysis applications.
 
 - [EOProduct](https://github.com/smart-data-models/dataModel.SatelliteImagery/blob/master/EOProduct/README.md). This entity contains a harmonised description of a generic EOProduct made for the Satellite Imagerry domain. This entity is primarily associated with the satellite products related to Earth Observation Analysis applications.
