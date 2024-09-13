@@ -140,5 +140,8 @@
   "resultDescription": {
     "type": "Property",
     "value": "description of the results"
-  }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
+  ]
 }
