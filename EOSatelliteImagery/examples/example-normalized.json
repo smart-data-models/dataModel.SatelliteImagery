@@ -126,10 +126,6 @@
     "type": "Text",
     "value": "S2A"
   },
-  "analyzedAt": {
-    "type": "Date-Time",
-    "value": "2024-08-28T11:21:21Z"
-  },
   "analysisType": {
     "type": "Text",
     "value": "chl-monitoring"
