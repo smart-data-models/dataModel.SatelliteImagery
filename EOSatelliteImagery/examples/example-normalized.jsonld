@@ -129,13 +129,6 @@
     "type": "Property",
     "value": "S2A"
   },
-  "analyzedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "date-time",
-      "@value": "2024-08-28T11:21:21Z"
-    }
-  },
   "analysisType": {
     "type": "Property",
     "value": "chl-monitoring"
