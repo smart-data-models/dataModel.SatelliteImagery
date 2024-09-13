@@ -123,7 +123,7 @@
   },
   "orbitNumber": {
     "type": "Property",
-    "value": "021"
+    "value": 21
   },
   "platformName": {
     "type": "Property",
