@@ -39,10 +39,12 @@
                         "type": "object",
                         "properties": {
                             "layer_name": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "Property. A string that states the layer name (e.g. band1)"
                             },
                             "layer_categorization": {
                                 "type": "string",
+                                "description": "Property. A string that describes the type of information (e.g. categorical, numerical)",
                                 "enum": [
                                     "categorical",
                                     "numerical"
@@ -50,6 +52,7 @@
                             },
                             "values_explanation": {
                                 "type": "array",
+                                "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])",
                                 "items": {
                                     "type": "string"
                                 }
@@ -68,9 +71,7 @@
     ],
     "required": [
         "id",
-        "type",
-        "localServerPath",
-        "storageFormat"
+        "type"
     ],
     "$schemaVersion": "0.0.1"
 }
