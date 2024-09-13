@@ -35,7 +35,7 @@
   "storageFormat": "GeoTIFF",
   "operationalMode": "MSI",
   "productType": "S2MSI1C",
-  "orbitNumber": "021",
+  "orbitNumber": 21,
   "platformName": "S2A",
   "processedBbox": {
     "type": "Polygon",
