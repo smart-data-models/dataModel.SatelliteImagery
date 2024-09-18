@@ -1,120 +1,120 @@
 {
-   "$schema":"http://json-schema.org/schema#",
-   "$schemaVersion":"0.0.1",
-   "modelTags":"",
-   "derivedFrom":"",
-   "license":"",
-   "$id":"https://smart-data-models.github.io/dataModel.SatelliteImagery/EOSatelliteImagery/schema.json",
-   "title":"Satellite Imagery - EO Unified Satellite Imagery",
-   "description":"This schema defines a unified entity within the SatelliteImagery domain, consolidating attributes from all existing entities related to satellite imagery, designed to offer a holistic view in the EO proccess",
-   "type":"object",
-   "allOf":[
-      {
-         "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-      },
-      {
-         "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-      },
-      {
-         "properties":{
-            "type":{
-               "type":"string",
-               "description":"Property. NGSI Entity type. It must be equal to EOSatelliteImagery",
-               "enum":[
-                  "EOSatelliteImagery"
-               ]
-            },
-            "productBbox":{
-               "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
-            },
-            "processedBbox":{
-               "$ref":"https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
-            },
-            "analysisType":{
-               "type":"string",
-               "description":"Property. Entity's type of analysis applied"
-            },
-            "provider":{
-               "type":"string",
-               "description":"Property.  Model:'https://schema.org/Text'. The provider of the algorithm"
-            },
-            "contentInformation":{
-               "type":"array",
-               "items":{
-                  "type":"object",
-                  "properties":{
-                     "layer_name":{
-                        "type":"string",
-                        "description":"Property. A string that states the layer name (e.g. band1)"
-                     },
-                     "layer_categorization":{
-                        "type":"string",
-                        "description":"Property. A string that describes the type of information (e.g. categorical, numerical)",
-                        "enum":[
-                           "categorical",
-                           "numerical"
-                        ]
-                     },
-                     "values_explanation":{
-                        "type":"array",
-                        "description":"Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])",
-                        "items":{
-                           "type":"string"
-                        }
-                     }
-                  }
-               },
-               "description":"Property. An array that describes for each layer (e.g. band1) or entity name, the type of information (e.g. categorical, numerical) and an array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
-            },
-            "localServerPath":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the path that the output data layer is saved on the server"
-            },
-            "storageFormat":{
-               "type":"string",
-               "description":"Property. Entity's satorage format"
-            },
-            "productFormat":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the format of the product"
-            },
-            "productID":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the unique ID of the product"
-            },
-            "productType":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the type of the product"
-            },
-            "productURL":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/url'. A mandatory url used to declare the download link of the product"
-            },
-            "operationalMode":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A text string used to declare the supported sensor modes if available"
-            },
-            "orbitNumber":{
-               "type":"number",
-               "description":"Property.  Model:'https://schema.org/Number'. The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
-            },
-            "resultDescription":{
-               "type":"string",
-               "description":"Property. The description of the analysis outcome"
-            },
-            "sensingDate":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
-            },
-            "platformName":{
-               "type":"string",
-               "description":"Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the name of the platform"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
+  "modelTags": "",
+  "derivedFrom": "",
+  "license": "",
+  "$id": "https://smart-data-models.github.io/dataModel.SatelliteImagery/EOSatelliteImagery/schema.json",
+  "title": "Satellite Imagery - EO Unified Satellite Imagery",
+  "description": "This schema defines a unified entity within the SatelliteImagery domain, consolidating attributes from all existing entities related to satellite imagery, designed to offer a holistic view in the EO proccess",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI Entity type. It must be equal to EOSatelliteImagery",
+          "enum": [
+            "EOSatelliteImagery"
+          ]
+        },
+        "productBbox": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
+        },
+        "processedBbox": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
+        },
+        "analysisType": {
+          "type": "string",
+          "description": "Property. Entity's type of analysis applied"
+        },
+        "provider": {
+          "type": "string",
+          "description": "Property.  Model:'https://schema.org/Text'. The provider of the algorithm"
+        },
+        "contentInformation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "layer_name": {
+                "type": "string",
+                "description": "Property. A string that states the layer name (e.g. band1)"
+              },
+              "layer_categorization": {
+                "type": "string",
+                "description": "Property. A string that describes the type of information (e.g. categorical, numerical)",
+                "enum": [
+                  "categorical",
+                  "numerical"
+                ]
+              },
+              "values_explanation": {
+                "type": "array",
+                "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])",
+                "items": {
+                  "type": "string"
+                }
+              }
             }
-         }
+          },
+          "description": "Property. An array that describes for each layer (e.g. band1) or entity name, the type of information (e.g. categorical, numerical) and an array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
+        },
+        "localServerPath": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the path that the output data layer is saved on the server"
+        },
+        "storageFormat": {
+          "type": "string",
+          "description": "Property. Entity's satorage format"
+        },
+        "productFormat": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the format of the product"
+        },
+        "productID": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the unique ID of the product"
+        },
+        "productType": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the type of the product"
+        },
+        "productURL": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/url'. A mandatory url used to declare the download link of the product"
+        },
+        "operationalMode": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A text string used to declare the supported sensor modes if available"
+        },
+        "orbitNumber": {
+          "type": "number",
+          "description": "Property.  Model:'https://schema.org/Number'. The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
+        },
+        "resultDescription": {
+          "type": "string",
+          "description": "Property. The description of the analysis outcome"
+        },
+        "sensingDate": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
+        },
+        "platformName": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. A mandatory text string used to declare the name of the platform"
+        }
       }
-   ],
-   "required":[
-      "id",
-      "type"
-   ]
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
 }
