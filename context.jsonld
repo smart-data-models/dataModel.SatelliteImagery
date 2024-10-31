@@ -17,14 +17,14 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "carriedOn": "https://smartdatamodels.org/dataModel.SatelliteImagery/carriedOn",
         "cloudCoverage": "https://smartdatamodels.org/dataModel.SatelliteImagery/cloudCoverage",
         "contentInformation": "https://smartdatamodels.org/dataModel.SatelliteImagery/contentInformation",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataHubName": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubName",
         "dataHubURL": "https://smartdatamodels.org/dataModel.SatelliteImagery/dataHubURL",
@@ -44,7 +44,7 @@
         "layer_categorization": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_categorization",
         "layer_name": "https://smartdatamodels.org/dataModel.SatelliteImagery/layer_name",
         "localServerPath": "https://smartdatamodels.org/dataModel.SatelliteImagery/localServerPath",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedBy": "https://smartdatamodels.org/dataModel.SatelliteImagery/observedBy",
