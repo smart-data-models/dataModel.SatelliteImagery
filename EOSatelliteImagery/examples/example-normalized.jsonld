@@ -137,9 +137,14 @@
     "type": "Property",
     "value": "CERTH"
   },
-  "resultDescription": {
-    "type": "Property",
-    "value": "description of the results"
+  "analytics": {
+    "type": "array",
+    "value": [
+      {
+        "name": "accuracy",
+        "value": "10%"
+      }
+    ]
   },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
