@@ -98,9 +98,19 @@
           "type": "number",
           "description": "Property.  Model:'https://schema.org/Number'. The orbit number of tha satellite pass. All units are accepted in [CEFACT](https://www.unece.org/cefact.html) code"
         },
-        "resultDescription": {
-          "type": "string",
-          "description": "Property. The description of the analysis outcome"
+        "analytics": {
+          "type": "array",
+          "description": "Property. An array that describes analytics",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Property. A string that states the analytics name"
+            },
+            "value": {
+              "type": "string",
+              "description": "Property. A string that describes the analytics value"
+            }
+          }          
         },
         "sensingDate": {
           "type": "string",
