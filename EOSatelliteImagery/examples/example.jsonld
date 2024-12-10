@@ -64,10 +64,12 @@
       ]
     ]
   },
-  "analytics": {
-    "name": "accuracy",
-    "value": "10%"
-  },
+  "analytics": [
+    {
+      "name": "accuracy",
+      "value": "10%"
+    }
+  ],
   "id": "KOURIS_ALGAE",
   "areaServed": "kouris",
   "provider": "CERTH",
