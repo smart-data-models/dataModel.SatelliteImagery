@@ -138,7 +138,7 @@
     "value": "CERTH"
   },
   "resultDescription": {
-    "type": "Text",
+    "type": "Property",
     "value": "description of the results"
   },
   "analytics": {
