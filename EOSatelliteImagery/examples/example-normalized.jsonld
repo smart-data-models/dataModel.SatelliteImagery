@@ -6,7 +6,7 @@
     "value": "CERTH"
   },
   "contentInformation": {
-    "type": "StructuredValue",
+    "type": "Property",
     "value": [
       {
         "layer_name": "band1",
