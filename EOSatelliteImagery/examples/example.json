@@ -64,6 +64,13 @@
       ]
     ]
   },
+  "resultDescription": "Analysis results from processed satellite imagery.",
+  "analytics": [
+    {
+      "name": "accuracy",
+      "value": "10%"
+    }
+  ],
   "id": "KOURIS_ALGAE",
   "areaServed": "kouris",
   "provider": "CERTH",

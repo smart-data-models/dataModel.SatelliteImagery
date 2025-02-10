@@ -21,3 +21,10 @@ contributors:
   project: WATERVERSE (https://waterverse.eu/)
   comments: Definition of the unified EOSatelliteImagery within the SatelliteImagery domain consolidating attributes from all existing related entities. Designed to offer a holistic view.
   year: 2024
+- name: Dimitris
+  surname: Karamouslis
+  mail: dkaram@iti.gr
+  organization: CERTH-ITI. https://www.iti.gr/
+  project: WATERVERSE (https://waterverse.eu/)
+  comments: Replacement of "resultDescription" field with "analytics" field to meet the requirements of the "Waterverse" project.
+  year: 2024
