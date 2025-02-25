@@ -142,7 +142,7 @@
     "value": "description of the results"
   },
   "analytics": {
-    "type": "array",
+    "type": "Property",
     "value": [
       {
         "name": "accuracy",
