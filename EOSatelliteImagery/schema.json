@@ -59,7 +59,8 @@
                 "type": "array",
                 "description": "Property. An array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])",
                 "items": {
-                  "type": "string"
+                  "type": "string",
+                  "description": "Property. Every element in the array with the explanation of the depicted values (e.g. [1:oil, 0:no oil])"
                 }
               }
             }
