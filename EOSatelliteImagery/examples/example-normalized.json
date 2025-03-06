@@ -137,5 +137,15 @@
   "resultDescription": {
     "type": "Text",
     "value": "description of the results"
+  },
+  "analytics": {
+    "type": "array",
+    "value": [
+      {
+        "name": "accuracy",
+        "value": "10%"
+      }
+    ]
   }
+
 }

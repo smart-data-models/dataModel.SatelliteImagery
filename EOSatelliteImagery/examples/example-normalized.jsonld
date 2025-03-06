@@ -141,6 +141,15 @@
     "type": "Property",
     "value": "description of the results"
   },
+  "analytics": {
+    "type": "Property",
+    "value": [
+      {
+        "name": "accuracy",
+        "value": "10%"
+      }
+    ]
+  },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.SatelliteImagery/master/context.jsonld"
   ]

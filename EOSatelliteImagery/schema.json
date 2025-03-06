@@ -102,6 +102,23 @@
           "type": "string",
           "description": "Property. The description of the analysis outcome"
         },
+        "analytics": {
+            "type": "array",
+            "description": "Property. An array that describes analytics",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Property. A string that states the analytics name"
+                },
+                "value": {
+                  "type": "string",
+                  "description": "Property. A string that describes the analytics value"
+                }
+              }
+            }
+          },
         "sensingDate": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Time'. The time at which the image was taken by the sensor"
