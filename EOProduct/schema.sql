@@ -1,5 +1,5 @@
 /* (Beta) Export of data model EOProduct of the subject dataModel.SatelliteImagery for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE orbitDirection_type AS ENUM ('Ascending', 'Descending');
+CREATE TYPE EOProduct_orbitDirection_type AS ENUM ('Ascending', 'Descending');
 CREATE TYPE EOProduct_type AS ENUM ('EOProduct');
 CREATE TABLE EOProduct (
   "address" JSON,
@@ -16,7 +16,7 @@ CREATE TABLE EOProduct (
   "location" JSON,
   "name" TEXT,
   "observedBy" TEXT,
-  "orbitDirection" orbitDirection_type,
+  "orbitDirection" EOProduct_orbitDirection_type,
   "orbitNumber" NUMERIC,
   "owner" JSON,
   "processingLevel" TEXT,
